@@ -1,0 +1,98 @@
+// imports
+@import "../../../style/defaultStyle";
+
+.footer-style {
+    padding: 90px 30px 50px 30px;
+    background: var(--theme-black);
+    font-size: 14px;
+
+    .box-content {
+        @include width(900);
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 600px;
+            margin: auto;
+          }
+        ul li a {
+            text-decoration: none;
+            cursor: pointer;
+            color: var(--white);
+            text-transform: uppercase;
+            font-size: 14px;
+          }
+        ul li a.active {
+            border-bottom: 3px solid var(--theme-red);
+            padding-bottom: 5px;
+        }
+
+        .contact-information img {
+            margin-right: 15px;
+        }
+        .location, .phone-email, .phone, .email, .social-icons {
+            @include flex-type(center);
+        }
+        .location, .phone-email {
+            margin-top: 15px;
+        }
+        .phone {
+            margin-right: 42px;            
+        }
+        .email {
+            margin-left: 42px;
+        }
+
+        .copyright {
+            font-size: 11px;
+        }
+        .copyright hr {
+            height: 1px;
+            background: var(--theme-red);
+            border: 0;
+            margin: 42px 0px 15px 0px;
+        }
+        
+    }
+    
+    &.background-opacity {
+        position: relative;
+        overflow: hidden;
+        background-color: var(--black);
+        z-index: 2;
+    }
+    &.background-opacity:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 3%;
+        object-fit: cover;
+        background-image: url("../../../img/backgrounds/subway.jpeg");
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    &.background-opacity img, ul, li, a, p, button {
+        z-index: 3;
+        position: relative;
+        color: var(--white);
+        text-align: center;
+    }
+
+    img.railworks-logo {
+        box-shadow: 1px 2px 6px var(--gray-800);
+        display: block;
+        margin: auto;
+    }
+}
