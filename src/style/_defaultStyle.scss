@@ -2,12 +2,18 @@
     @if $val == row {
       display: flex;
       flex-direction: row;
+    } @else if $val == row-reverse {
+      display: flex;
+      flex-direction: row-reverse;
     } @else if $val == column {
       display: flex;
       flex-direction: column;
     } @else if $val == space-between {
       display: flex;
       justify-content: space-between;
+    } @else if $val == space-evenly {
+      display: flex;
+      justify-content: space-evenly;
     } @else if $val == center {
       display: flex;
       justify-content: center;

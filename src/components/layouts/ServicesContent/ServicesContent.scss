@@ -2,7 +2,7 @@
 @import "../../../style/defaultStyle";
 
 .services-style {
-    .down-pattern {
+    .top-pattern {
         clip-path: polygon(0 100%, 100% 0, 100% 0, 0 0);
         height: 100px;
         background: var(--white);
@@ -11,16 +11,15 @@
     }
     
     section.services-content {
-        padding: var(--padding-large);
+        padding: var(--padding-top-large);
         position: absolute;
-        margin-top: -100px;
+        margin-top: -99px;
     
         .box-content {
-            @include width(900);
+            @include width(1200);
     
             .box-info {
-                @include flex-type(row);
-                align-items: center;
+               @include flex-type(space-evenly);
                 margin-top: 15px;
             }
             .box-info:first-child {
@@ -28,24 +27,38 @@
             }
         }
     
-        .parallax {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.2;
-            z-index: 1;
-        }
-    
-        &.hero {
+        &.background-opacity {
             position: relative;
             overflow: hidden;
-            background: var(--theme-black);
+            background-color: var(--black);
             z-index: 2;
         }
-        &.hero h2, p, img, .box-info {
+        &.background-opacity:before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 21%;
+            object-fit: cover;
+            background-image: url("../../../img/backgrounds/walkie-talkie.jpg");
+            background-position: 50% 0;
+            -ms-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*
+                fixed = parallax
+                scroll = normal
+            */
+            background-attachment: fixed;
+        }
+        &.background-opacity img, p, .box-content {
             z-index: 3;
             position: relative;
             color: var(--white);

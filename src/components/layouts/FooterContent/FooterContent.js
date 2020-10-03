@@ -8,28 +8,6 @@ import iconTwitter from "../../../img/icons/twitterwht-circle.png";
 import iconFacebook from "../../../img/icons/facebookwht-circle.png";
 import iconInstagram from "../../../img/icons/instagramwht-circle.png";
 
-// import { useState } from 'react';
-
-// function App() {
-//     const [isShown, setIsShown] = useState(false);
-  
-//     return (
-//       <div className="App">
-//         <Card>
-//           onMouseEnter={() => setIsShown(true)}
-//           onMouseLeave={() => setIsShown(false)}>
-//           Hover over me!
-//         </Card>
-
-//         {isShown && (
-//           <div>
-//             I'll appear when you hover over the button.
-//           </div>
-//         )}
-//       </div>
-//     );
-//   };
-
   
 export class FooterContent extends Component {
     render() {

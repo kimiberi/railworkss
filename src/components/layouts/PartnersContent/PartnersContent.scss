@@ -1,0 +1,44 @@
+// imports
+@import "../../../style/defaultStyle";
+
+.partners-style {
+    padding: var(--padding-big);
+    background: var(--white);
+
+    .box-content {                    
+        @include width(1200);
+
+        .box-info {
+            @include flex-type(space-between);
+
+            .box-1 {
+                @include flex-type(column);
+                justify-content: flex-end;
+                margin-right: 30px;
+            }
+            .box-2 {
+                @include flex-type(column);
+                justify-content: flex-start;
+                margin-left: 30px;
+            }
+
+            &.reverse {
+                @include flex-type(row-reverse);
+
+                .box-1 {
+                    margin-right: 0px;
+                    margin-left: 30px;                    
+                }
+                .box-2 {
+                    margin-right: 30px;
+                    margin-left: 0px;
+                }
+                .box-hikvision {                     
+                    @include flex-type(column);
+                    justify-content: center;
+                    margin-left: 30px;
+                }
+            }
+        }        
+    }
+}

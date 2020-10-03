@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./ServicesContent.scss";
 import iconCheck from "../../../img/icons/checkwht.png";
-import BGsubway from "../../../img/backgrounds/subway.jpeg";
+import BGradio from "../../../img/backgrounds/walkie-talkie.jpg";
 import styled from "@emotion/styled/macro";
 
 // INSTALL THIS
@@ -17,7 +17,7 @@ const DisplayOver = styled.div({
     zIndex: 2,
     transition: "background-color 350ms ease",
     backgroundColor: "transparent",
-    padding: "20px 20px 0 20px",
+    padding: "60px 20px 0 20px",
     boxSizing: "border-box",
   });
   
@@ -48,12 +48,92 @@ const DisplayOver = styled.div({
     left: "20px",
   });
 
-  const Background = styled.div({
+  const BackgroundFlipCard_1 = styled.div({
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     color: "#FFF",
     position: "relative",
-    width: "350px",
+    width: "320px",
+    height: "230px",
+    cursor: "pointer",
+    backgroundImage: 'url(' + require('../../../img/backgrounds/handyradio.jpg') + ')',
+
+    [`:hover ${DisplayOver}`]: {
+        backgroundColor: "rgba(0,0,0,.9)",
+      },
+      [`:hover ${SubTitle}, :hover ${Paragraph}`]: {
+        transform: "translate3d(0,0,0)",
+      },
+      [`:hover ${Hover}`]: {
+        opacity: 1,
+      },
+  });
+
+  function FlipCard_1() {
+      return (
+          <div style={{marginRight: '20px'}}>
+              <BackgroundFlipCard_1>
+                <DisplayOver>
+                    {/* <BigTitle></BigTitle> */}
+                    <Hover>
+                    {/* <SubTitle></SubTitle> */}
+                    <Paragraph>
+                        Installation, Comissioning and Integration Services (Turnkey Projects)
+                    </Paragraph>
+                    <CTA>View More +</CTA>
+                    </Hover>
+                </DisplayOver>
+              </BackgroundFlipCard_1>
+          </div>
+      )
+  };
+
+  const BackgroundFlipCard_2 = styled.div({
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    color: "#FFF",
+    position: "relative",
+    width: "320px",
+    height: "230px",
+    cursor: "pointer",
+    backgroundImage: 'url(' + require('../../../img/backgrounds/wiredcabling.jpg') + ')',
+
+    [`:hover ${DisplayOver}`]: {
+        backgroundColor: "rgba(0,0,0,.9)",
+      },
+      [`:hover ${SubTitle}, :hover ${Paragraph}`]: {
+        transform: "translate3d(0,0,0)",
+      },
+      [`:hover ${Hover}`]: {
+        opacity: 1,
+      },
+  });
+
+  function FlipCard_2() {
+    return (
+        <div style={{marginRight: '20px'}}>
+            <BackgroundFlipCard_2>
+              <DisplayOver>
+                  {/* <BigTitle></BigTitle> */}
+                  <Hover>
+                  {/* <SubTitle></SubTitle> */}
+                  <Paragraph>
+                        Supply of ancillary materials (Power Systems, Batteries, Grounding, Structured Cabling, Equipment Racks, etc.)
+                  </Paragraph>
+                  <CTA>View More +</CTA>
+                  </Hover>
+              </DisplayOver>
+            </BackgroundFlipCard_2>
+        </div>
+    )
+};
+
+const BackgroundFlipCard_3 = styled.div({
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    color: "#FFF",
+    position: "relative",
+    width: "320px",
     height: "230px",
     cursor: "pointer",
     backgroundImage: 'url(' + require('../../../img/backgrounds/cabling.jpeg') + ')',
@@ -69,46 +149,10 @@ const DisplayOver = styled.div({
       },
   });
 
-  function FlipCard_1() {
-      return (
-          <div>
-              <Background>
-                <DisplayOver>
-                    {/* <BigTitle></BigTitle> */}
-                    <Hover>
-                    {/* <SubTitle></SubTitle> */}
-                    <Paragraph>
-                        Installation, Comissioning and Integration Services (Turnkey Projects)
-                    </Paragraph>
-                    <CTA>View More +</CTA>
-                    </Hover>
-                </DisplayOver>
-              </Background>
-          </div>
-      )
-  };
-  function FlipCard_2() {
-    return (
-        <div>
-            <Background>
-              <DisplayOver>
-                  {/* <BigTitle></BigTitle> */}
-                  <Hover>
-                  {/* <SubTitle></SubTitle> */}
-                  <Paragraph>
-                        Supply of ancillary materials (Power Systems, Batteries, Grounding, Structured Cabling, Equipment Racks, etc.)
-                  </Paragraph>
-                  <CTA>View More +</CTA>
-                  </Hover>
-              </DisplayOver>
-            </Background>
-        </div>
-    )
-};
 function FlipCard_3() {
     return (
         <div>
-            <Background>
+            <BackgroundFlipCard_3>
               <DisplayOver>
                   {/* <BigTitle></BigTitle> */}
                   <Hover>
@@ -119,14 +163,36 @@ function FlipCard_3() {
                   <CTA>View More +</CTA>
                   </Hover>
               </DisplayOver>
-            </Background>
+            </BackgroundFlipCard_3>
         </div>
     )
-};  
+}; 
+
+const BackgroundFlipCard_4 = styled.div({
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    color: "#FFF",
+    position: "relative",
+    width: "320px",
+    height: "230px",
+    cursor: "pointer",
+    backgroundImage: 'url(' + require('../../../img/backgrounds/walkietalkie_case.jpg') + ')',
+
+    [`:hover ${DisplayOver}`]: {
+        backgroundColor: "rgba(0,0,0,.9)",
+      },
+      [`:hover ${SubTitle}, :hover ${Paragraph}`]: {
+        transform: "translate3d(0,0,0)",
+      },
+      [`:hover ${Hover}`]: {
+        opacity: 1,
+      },
+  });
+
 function FlipCard_4() {
     return (
-        <div>
-            <Background>
+        <div style={{marginRight: '20px'}}>
+            <BackgroundFlipCard_4>
               <DisplayOver>
                   {/* <BigTitle></BigTitle> */}
                   <Hover>
@@ -137,14 +203,36 @@ function FlipCard_4() {
                   <CTA>View More +</CTA>
                   </Hover>
               </DisplayOver>
-            </Background>
+            </BackgroundFlipCard_4>
         </div>
     )
 };
+
+const BackgroundFlipCard_5 = styled.div({
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    color: "#FFF",
+    position: "relative",
+    width: "320px",
+    height: "230px",
+    cursor: "pointer",
+    backgroundImage: 'url(' + require('../../../img/backgrounds/constructionworker.jpg') + ')',
+
+    [`:hover ${DisplayOver}`]: {
+        backgroundColor: "rgba(0,0,0,.9)",
+      },
+      [`:hover ${SubTitle}, :hover ${Paragraph}`]: {
+        transform: "translate3d(0,0,0)",
+      },
+      [`:hover ${Hover}`]: {
+        opacity: 1,
+      },
+  });
+
 function FlipCard_5() {
     return (
-        <div>
-            <Background>
+        <div style={{marginRight: '20px'}}>
+            <BackgroundFlipCard_5>
               <DisplayOver>
                   {/* <BigTitle></BigTitle> */}
                   <Hover>
@@ -155,14 +243,36 @@ function FlipCard_5() {
                   <CTA>View More +</CTA>
                   </Hover>
               </DisplayOver>
-            </Background>
+            </BackgroundFlipCard_5>
         </div>
     )
-};  
+};
+
+const BackgroundFlipCard_6 = styled.div({
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    color: "#FFF",
+    position: "relative",
+    width: "320px",
+    height: "230px",
+    cursor: "pointer",
+    backgroundImage: 'url(' + require('../../../img/backgrounds/cableladder.jpg') + ')',
+
+    [`:hover ${DisplayOver}`]: {
+        backgroundColor: "rgba(0,0,0,.9)",
+      },
+      [`:hover ${SubTitle}, :hover ${Paragraph}`]: {
+        transform: "translate3d(0,0,0)",
+      },
+      [`:hover ${Hover}`]: {
+        opacity: 1,
+      },
+  });
+
 function FlipCard_6() {
     return (
         <div>
-            <Background>
+            <BackgroundFlipCard_6>
               <DisplayOver>
                   {/* <BigTitle></BigTitle> */}
                   <Hover>
@@ -173,38 +283,19 @@ function FlipCard_6() {
                   <CTA>View More +</CTA>
                   </Hover>
               </DisplayOver>
-            </Background>
+            </BackgroundFlipCard_6>
         </div>
     )
 };  
 
 
 function ParallaxContent() {
-    const [offset, setOffset] = React.useState(0);
-
-    React.useEffect(() => {
-      function handleScroll() {
-        setOffset(window.pageYOffset)
-      }
-      window.addEventListener("scroll", handleScroll)
-      return () => {
-        window.removeEventListener("scroll", handleScroll)
-      }
-    }, []);
 
     return (
         <div>
-            <div className="down-pattern"></div>
+            <div className="top-pattern"></div>
 
-            <section className="services-content hero">
-                <img
-                    src={BGsubway}
-                    alt="test"
-                    className="parallax"
-                    style={{
-                    transform: `translateY(${offset * 0.5}px)`,
-                    }}
-                />
+            <section className="services-content background-opacity">
                 
                 <h2>Our Services</h2>
                 <div className="box-content">
