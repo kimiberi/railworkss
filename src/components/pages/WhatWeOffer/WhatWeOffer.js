@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import WhatWeOfferContent from '../../layouts/WhatWeOfferContent/WhatWeOfferContent';
+import React, { Component } from 'react'
+import WhatWeOfferContent from '../../layouts/WhatWeOfferContent/WhatWeOfferContent'
 
 export class WhatWeOffer extends Component {
-    render() {
-        return (
-            <div>
-                <WhatWeOfferContent />
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <WhatWeOfferContent />
+      </div>
+    )
+  }
 }
 
-export default WhatWeOffer;
+export default WhatWeOffer

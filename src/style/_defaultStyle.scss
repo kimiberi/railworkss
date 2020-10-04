@@ -1,39 +1,39 @@
 @mixin flex-type($val) {
-    @if $val == row {
-      display: flex;
-      flex-direction: row;
-    } @else if $val == row-reverse {
-      display: flex;
-      flex-direction: row-reverse;
-    } @else if $val == column {
-      display: flex;
-      flex-direction: column;
-    } @else if $val == space-between {
-      display: flex;
-      justify-content: space-between;
-    } @else if $val == space-evenly {
-      display: flex;
-      justify-content: space-evenly;
-    } @else if $val == center {
-      display: flex;
-      justify-content: center;
-    } 
+  @if $val == row {
+    display: flex;
+    flex-direction: row;
+  } @else if $val == row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  } @else if $val == column {
+    display: flex;
+    flex-direction: column;
+  } @else if $val == space-between {
+    display: flex;
+    justify-content: space-between;
+  } @else if $val == space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+  } @else if $val == center {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @mixin width($val) {
-    @if $val == 1200 {
-        width: 1200px;
-        margin: auto;
-    } @else if $val == 900 {
-        width: 900px;
-        margin: auto;
-    }
+  @if $val == 1200 {
+    width: 1200px;
+    margin: auto;
+  } @else if $val == 900 {
+    width: 900px;
+    margin: auto;
+  }
 }
 
 @for $spacer from 1 through 6 {
-    .spacer-#{$spacer} {
-      height: 30px * $spacer;
-    }
+  .spacer-#{$spacer} {
+    height: 30px * $spacer;
   }
+}
 
-  // @extend h1;
+// @extend h1;
