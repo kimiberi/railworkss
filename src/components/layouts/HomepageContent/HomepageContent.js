@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import './HomepageContent.scss'
-import ServicesContent from '../ServicesContent/ServicesContent'
-import PartnersContent from '../PartnersContent/PartnersContent'
+import IntroductionContent from '../IntroductionContent/IntroductionContent'
 import WhatWeOfferContent from '../WhatWeOfferContent/WhatWeOfferContent'
+import PartnersContent from '../PartnersContent/PartnersContent'
+import ServicesContent from '../ServicesContent/ServicesContent'
 import logoHytera from '../../../img/logo_partners/hytera.png'
 import logoMotorola from '../../../img/logo_partners/motorola.png'
 import logoRadwin from '../../../img/logo_partners/radwin.png'
@@ -18,6 +19,7 @@ export class HomepageContent extends Component {
   render() {
     return (
       <div className='homepage-style'>
+        <IntroductionContent />
         <WhatWeOfferContent />
         <PartnersContent />
         <ServicesContent />

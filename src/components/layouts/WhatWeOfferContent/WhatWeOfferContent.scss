@@ -27,6 +27,7 @@
     background: var(--white);
     position: relative;
     z-index: 6;
+    margin-top: -1px; // connected in IntroductionContent.js
   }
 
   .down-pattern {

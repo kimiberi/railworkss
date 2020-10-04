@@ -1,0 +1,49 @@
+// imports
+@import '../../../style/defaultStyle';
+
+.intro-style {
+  padding: var(--padding-big);
+  background: var(--white);
+  position: relative;
+  z-index: 7; // for .top-pattern under WhatWeOfferContent.js
+
+  .box-content {
+    @include width(1200);
+    @include flex-type(space-between);
+
+    .box-1 {
+      margin-right: 42px;
+      width: 100%;
+
+      &.animation-effect {
+        overflow: hidden;
+        box-shadow: 21px 21px #f24a4a;
+        height: 350px; // need to be match on img height
+      }
+      &.animation-effect img {
+        transition: all 0.3s ease-out;
+        height: 350px; // need to be match on animation effect
+      }
+      &.animation-effect img:hover {
+        transform: scale(1.2, 1.2);
+      }
+    }
+
+    .box-2 {
+      margin-left: 42px;
+      width: 160%;
+    }
+
+    h2 {
+      text-align: left;
+      margin-bottom: 0px;
+    }
+    hr {
+      height: 4px;
+      width: 42px;
+      background: var(--theme-red);
+      border: 0;
+      margin-right: 21px;
+    }
+  }
+}
