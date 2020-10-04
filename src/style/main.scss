@@ -1,5 +1,6 @@
 // Imports
 @import 'variables';
+@import 'fonts';
 
 * {
   box-sizing: border-box;
@@ -13,18 +14,29 @@ body {
   line-height: 1.4;
 }
 
+h1,
+h2 {
+  font-family: var(--fontfam-Raleway);
+  font-weight: 700; // based on Raleway-Bold.ttf
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+
 h1 {
   font-size: 42px;
-  text-transform: capitalize;
 }
 
 h2 {
   font-size: 27px;
   text-align: center;
-  text-transform: capitalize;
   margin-bottom: 30px;
 }
 
 a {
   text-decoration: none;
+  font-family: var(--fontfam-Raleway);
+}
+
+p {
+  font-family: var(--fontfam-Raleway);
 }

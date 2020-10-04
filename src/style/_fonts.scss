@@ -1,0 +1,102 @@
+// Font Family
+$JosefinSansPath: '../fonts/JosefinSans' !default;
+$PlayfairDisplaySCPath: '../fonts/PlayfairDisplaySC' !default;
+$RalewayPath: '../fonts/Raleway' !default;
+$RobotoPath: '../fonts/Roboto' !default;
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('#{$JosefinSansPath}/JosefinSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$PlayfairDisplaySCPath}/PlayfairDisplaySC-Regular.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: italic;
+  font-weight: 400;
+  src: url('#{$PlayfairDisplaySCPath}/PlayfairDisplaySC-Italic.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: normal;
+  font-weight: 700;
+  src: url('#{$PlayfairDisplaySCPath}/PlayfairDisplaySC-Bold.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: italic;
+  font-weight: 700;
+  src: url('#{$PlayfairDisplaySCPath}/PlayfairDisplaySC-BoldItalic.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: normal;
+  font-weight: 900;
+  src: url('#{$PlayfairDisplaySCPath}/PlayfairDisplaySC-Black.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: italic;
+  font-weight: 900;
+  src: url('#{$PlayfairDisplaySCPath}/PlayfairDisplaySC-BlackItalic.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: url('#{$RalewayPath}/Raleway-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url('#{$RalewayPath}/Raleway-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: url('#{$RalewayPath}/Raleway-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('#{$RobotoPath}/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$RobotoPath}/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('#{$RobotoPath}/Roboto-Medium.ttf') format('truetype');
+}

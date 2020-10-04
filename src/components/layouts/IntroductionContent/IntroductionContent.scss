@@ -22,7 +22,7 @@
       }
       &.animation-effect img {
         transition: all 0.3s ease-out;
-        height: 350px; // need to be match on animation effect
+        height: 350px; // need to be match on animation effect height
       }
       &.animation-effect img:hover {
         transform: scale(1.2, 1.2);
