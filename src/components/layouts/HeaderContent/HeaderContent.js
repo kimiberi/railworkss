@@ -8,7 +8,7 @@ export class HeaderContent extends Component {
       <div className='header-style background-opacity'>
         <div className='box-content'>
           <p className='slogan'>DELIVERING SYSTEMS</p>
-          <p className='sub-slogan'>FOR MISSION CRITICAL CHALLENGESSSSSSSS</p>
+          <p className='sub-slogan'>FOR MISSION CRITICAL CHALLENGES</p>
         </div>
 
         <div className='down-pattern'></div>
