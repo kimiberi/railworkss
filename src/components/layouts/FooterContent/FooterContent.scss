@@ -9,6 +9,10 @@
   .box-content {
     @include width(900);
 
+    a:hover {
+      color: var(--white);
+    }
+
     ul {
       list-style-type: none;
       margin: 0;

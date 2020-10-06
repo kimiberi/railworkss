@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import './PartnersContent.scss'
-import imgComputer from '../../../img/partners_company/pc.png'
-import imgRadioCom from '../../../img/partners_company/radiocomm.png'
-import imgRadwin from '../../../img/partners_company/radwinsystem.jpg'
-import imgHikVision from '../../../img/partners_company/hikvisionsystem.jpg'
+import imgHytera from '../../../img/logo_partners/hytera.png'
+import imgMotorola from '../../../img/logo_partners/motorola.png'
+import imgRadwin from '../../../img/logo_partners/radwin.png'
+import imgHikVision from '../../../img/logo_partners/hikvision.png'
 
 export class PartnersContent extends Component {
   render() {
@@ -24,7 +24,7 @@ export class PartnersContent extends Component {
               </p>
             </div>
             <div className='box-2'>
-              <img src={imgComputer} alt='Personal Computer' width='360' />
+              <img src={imgHytera} alt='Personal Computer' width='300' />
               <div className='spacer-3'></div>
             </div>
           </div>
@@ -44,9 +44,9 @@ export class PartnersContent extends Component {
             </div>
             <div className='box-2'>
               <img
-                src={imgRadioCom}
+                src={imgMotorola}
                 alt='Radio Telecommunication'
-                width='420'
+                width='300'
               />
               <div className='spacer-3'></div>
             </div>
@@ -66,7 +66,7 @@ export class PartnersContent extends Component {
               </p>
             </div>
             <div className='box-2'>
-              <img src={imgRadwin} alt='Private Networks' width='420' />
+              <img src={imgRadwin} alt='Private Networks' width='300' />
               <div className='spacer-3'></div>
             </div>
           </div>
@@ -85,7 +85,7 @@ export class PartnersContent extends Component {
               </p>
             </div>
             <div className='box-2'>
-              <img src={imgHikVision} alt='IoT solution' width='360' />
+              <img src={imgHikVision} alt='IoT solution' width='300' />
               <div className='spacer-3'></div>
             </div>
           </div>

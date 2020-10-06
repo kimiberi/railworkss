@@ -29,13 +29,13 @@ export class FooterContent extends Component {
                 </a>
               </li>
               <li>
-                <a href='#news'>About</a>
+                <a href='#about'>About</a>
               </li>
               <li>
                 <a href='#contact'>Products</a>
               </li>
               <li>
-                <a href='#about'>Services</a>
+                <a href='#services'>Services</a>
               </li>
               <li>
                 <a href='#contact'>Projects</a>

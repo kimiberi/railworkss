@@ -6,6 +6,7 @@
   background: var(--white);
   position: relative;
   z-index: 7; // for .top-pattern under WhatWeOfferContent.js
+  margin-top: -1px; // connected in HeaderContent.js
 
   .box-content {
     @include width(1200);
