@@ -4,6 +4,9 @@
 .partners-style {
   padding: var(--padding-big);
   background: var(--white);
+  position: relative;
+  z-index: 7;
+  margin-top: -1px; // connected in WhatWeOfferContent.js
 
   .box-content {
     @include width(1200);

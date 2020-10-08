@@ -2,16 +2,16 @@
 @import '../../../style/defaultStyle';
 
 .homepage-style {
-  .partners-content {
-    background: var(--white);
-    padding: var(--padding-small);
+  // .partners-content {
+  //   background: var(--white);
+  //   padding: var(--padding-small);
 
-    .box-content {
-      @include flex-type(space-between);
-      @include width(1200);
-      align-items: center;
-    }
-  }
+  //   .box-content {
+  //     @include flex-type(space-between);
+  //     @include width(1200);
+  //     align-items: center;
+  //   }
+  // }
 
   .customers-content {
     background: var(--theme-cream);

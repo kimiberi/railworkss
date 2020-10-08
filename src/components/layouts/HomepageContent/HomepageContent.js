@@ -4,10 +4,10 @@ import IntroductionContent from '../IntroductionContent/IntroductionContent'
 import WhatWeOfferContent from '../WhatWeOfferContent/WhatWeOfferContent'
 import PartnersContent from '../PartnersContent/PartnersContent'
 import ServicesContent from '../ServicesContent/ServicesContent'
-import logoHytera from '../../../img/logo_partners/hytera.png'
-import logoMotorola from '../../../img/logo_partners/motorola.png'
-import logoRadwin from '../../../img/logo_partners/radwin.png'
-import logoHikVision from '../../../img/logo_partners/hikvision.png'
+// import logoHytera from '../../../img/logo_partners/hytera.png'
+// import logoMotorola from '../../../img/logo_partners/motorola.png'
+// import logoRadwin from '../../../img/logo_partners/radwin.png'
+// import logoHikVision from '../../../img/logo_partners/hikvision.png'
 import logoPNR from '../../../img/logo_customers/pnr.png'
 import logoLRT from '../../../img/logo_customers/lrt.png'
 import logoFireProtection from '../../../img/logo_customers/fireprotection.png'
@@ -24,7 +24,7 @@ export class HomepageContent extends Component {
         <PartnersContent />
         <ServicesContent />
 
-        <div className='partners-content'>
+        {/* <div className='partners-content'>
           <h2>Our Partners</h2>
           <div className='box-content'>
             <a href='https://hytera.ph/' target='_blank'>
@@ -40,43 +40,67 @@ export class HomepageContent extends Component {
               <img src={logoHikVision} alt='HikVision' width='145' />
             </a>
           </div>
-        </div>
+        </div> */}
 
         <div className='customers-content'>
           <h2>Our Customers</h2>
           <div className='box-content'>
-            <a href='https://www.pnr.gov.ph/' target='_blank'>
+            <a
+              href='https://www.pnr.gov.ph/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <img
                 src={logoPNR}
                 alt='Philippine National Railway'
                 width='100'
               />
             </a>
-            <a href='http://lrta.gov.ph/' target='_blank'>
+            <a
+              href='http://lrta.gov.ph/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <img
                 src={logoLRT}
                 alt='Light Rail Transit Authority'
                 width='110'
               />
             </a>
-            <a href='https://bfp.gov.ph/' target='_blank'>
+            <a
+              href='https://bfp.gov.ph/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <img
                 src={logoFireProtection}
                 alt='Bureau of Fire Protection'
                 width='100'
               />
             </a>
-            <a href='https://www.army.mil.ph/home/' target='_blank'>
+            <a
+              href='https://www.army.mil.ph/home/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <img
                 src={logoKatihan}
                 alt='Hukbong Katihan ng Pilipinas'
                 width='100'
               />
             </a>
-            <a href='https://pnp.gov.ph/' target='_blank'>
+            <a
+              href='https://pnp.gov.ph/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <img src={logoPNP} alt='Philippine National Police' width='70' />
             </a>
-            <a href='https://pdea.gov.ph/' target='_blank'>
+            <a
+              href='https://pdea.gov.ph/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <img
                 src={logoPDEA}
                 alt='Philippine Drug Enforcement Agency'

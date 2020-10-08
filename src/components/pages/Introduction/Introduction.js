@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import IntroductionContent from '../../IntroductionContent/IntroductionContent'
+import IntroductionContent from '../../layouts/IntroductionContent/IntroductionContent'
 
 export class Introduction extends Component {
   render() {

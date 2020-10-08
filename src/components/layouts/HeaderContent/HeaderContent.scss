@@ -74,19 +74,41 @@
         display: flex;
         justify-content: space-between;
         letter-spacing: 2px;
-        width: 700px;
+        width: auto;
         margin: auto;
       }
       ul li a {
+        font-family: var(--fontfam-Raleway);
         text-decoration: none;
         cursor: pointer;
         color: var(--white);
         text-transform: uppercase;
         font-size: 14px;
+        margin: 0px 10px;
+        padding: 10px 10px;
       }
-      ul li a.active {
-        border-bottom: 3px solid var(--theme-red);
-        padding-bottom: 5px;
+
+      ul li a.active:before {
+        position: absolute;
+        background: #fff;
+        opacity: 0.3;
+        transition: all 0.3s;
+      }
+
+      &.pullRight a:before {
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        content: '';
+        background: #fff;
+        opacity: 0.3;
+        transition: all 0.3s;
+      }
+      &.pullRight a:hover:before,
+      ul li a.active:before {
+        width: 100%;
       }
     }
 

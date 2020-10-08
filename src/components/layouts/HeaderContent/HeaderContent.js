@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import './HeaderContent.scss'
 import logoRailworks from '../../../img/icons/railworks_whtlogo.png'
 import iconLocation from '../../../img/icons/favicon_whtlocation.png'
@@ -6,6 +8,10 @@ import iconPhone from '../../../img/icons/favicon_whtphone.png'
 import iconEmail from '../../../img/icons/favicon_whtemail.png'
 
 export class HeaderContent extends Component {
+  constructor(props) {
+    super(props)
+  }
+
   render() {
     return (
       <div className='header-style background-opacity'>
@@ -14,8 +20,14 @@ export class HeaderContent extends Component {
             <section className='location'>
               <img src={iconLocation} width='18' height='18' />
               <p>
-                101 E. Aguinaldo Ave. AFPOVAI Phase I Western Bicutan, Taguig
-                City 1630 Philippines
+                <a
+                  href='https://www.google.com/maps/place/Railworks+Corporation/@14.5202409,121.0343059,17z/data=!3m1!4b1!4m5!3m4!1s0x3397c923a36a5983:0xf6401fbedfe87a9e!8m2!3d14.5202357!4d121.0364946'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  101 E. Aguinaldo Ave. AFPOVAI Phase I Western Bicutan, Taguig
+                  City 1630 Philippines
+                </a>
               </p>
             </section>
             <section className='email'>
@@ -36,34 +48,60 @@ export class HeaderContent extends Component {
 
         <div className='navheader header-opacity'>
           <section className='business-logo'>
-            <img
-              src={logoRailworks}
-              alt='Railworks Incorporated'
-              width='150'
-              className='railworks-logo'
-            />
+            <Link to={`/`}>
+              <img
+                src={logoRailworks}
+                alt='Railworks Incorporated'
+                width='150'
+                className='railworks-logo'
+              />
+            </Link>
           </section>
-          <section className='nav'>
+          <section className='nav pullRight'>
             <ul>
               <li>
-                <a class='active' href='#home'>
+                <Link
+                  to={`/`}
+                  className={window.location.pathname == '/' ? 'active' : ''}
+                >
                   Home
+                </Link>
+              </li>
+              <li>
+                <a
+                  href='/about#/about'
+                  className={
+                    window.location.pathname == '/about' ? 'active' : ''
+                  }
+                >
+                  About
                 </a>
               </li>
               <li>
-                <a href='#about'>About</a>
+                <a
+                  href='/partners#/partners'
+                  className={
+                    window.location.pathname == '/partners' ? 'active' : ''
+                  }
+                >
+                  Partners
+                </a>
               </li>
               <li>
-                <a href='#contact'>Products</a>
+                <a
+                  href='/services#/services'
+                  className={
+                    window.location.pathname == '/services' ? 'active' : ''
+                  }
+                >
+                  Services
+                </a>
               </li>
               <li>
-                <a href='#services'>Services</a>
+                <a href='#projects'>Projects</a>
               </li>
               <li>
-                <a href='#contact'>Projects</a>
-              </li>
-              <li>
-                <a href='#about'>Contact Us</a>
+                <a href='#contact'>Contact Us</a>
               </li>
             </ul>
           </section>
@@ -80,4 +118,4 @@ export class HeaderContent extends Component {
   }
 }
 
-export default HeaderContent
+export default withRouter(HeaderContent)

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './ServicesContent.scss'
-import iconCheck from '../../../img/icons/checkwht.png'
-import BGradio from '../../../img/backgrounds/walkie-talkie.jpg'
+// import iconCheck from '../../../img/icons/checkwht.png'
+// import BGradio from '../../../img/backgrounds/walkie-talkie.jpg'
 import styled from '@emotion/styled/macro'
 
 // INSTALL THIS
@@ -303,7 +303,7 @@ function ParallaxContent() {
     <div>
       <div className='top-pattern'></div>
 
-      <section className='services-content background-opacity'>
+      <section className='services-content background-opacity' id='/services'>
         <h2>Our Services</h2>
         <div className='box-content'>
           <div className='box-info'>

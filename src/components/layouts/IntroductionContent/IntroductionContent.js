@@ -5,7 +5,7 @@ import imgBranchOffice from '../../../img/branch-office.jpg'
 export class IntroductionContent extends Component {
   render() {
     return (
-      <div className='intro-style'>
+      <div className='intro-style' id='/about'>
         <div className='box-content'>
           <div className='box-1 animation-effect'>
             <img src={imgBranchOffice} alt='Main Building Office' />

@@ -8,7 +8,7 @@ import imgHikVision from '../../../img/logo_partners/hikvision.png'
 export class PartnersContent extends Component {
   render() {
     return (
-      <div className='partners-style'>
+      <div className='partners-style' id='/partners'>
         <div className='box-content'>
           <div className='box-info'>
             <div className='box-1'>
@@ -24,7 +24,9 @@ export class PartnersContent extends Component {
               </p>
             </div>
             <div className='box-2'>
-              <img src={imgHytera} alt='Personal Computer' width='300' />
+              <a href='https://hytera.ph/' target='_blank'>
+                <img src={imgHytera} alt='Personal Computer' width='300' />
+              </a>
               <div className='spacer-3'></div>
             </div>
           </div>
@@ -43,11 +45,13 @@ export class PartnersContent extends Component {
               </p>
             </div>
             <div className='box-2'>
-              <img
-                src={imgMotorola}
-                alt='Radio Telecommunication'
-                width='300'
-              />
+              <a href='https://www.motorolasolutions.com/' target='_blank'>
+                <img
+                  src={imgMotorola}
+                  alt='Radio Telecommunication'
+                  width='300'
+                />
+              </a>
               <div className='spacer-3'></div>
             </div>
           </div>
@@ -66,7 +70,9 @@ export class PartnersContent extends Component {
               </p>
             </div>
             <div className='box-2'>
-              <img src={imgRadwin} alt='Private Networks' width='300' />
+              <a href='https://www.radwin.com/' target='_blank'>
+                <img src={imgRadwin} alt='Private Networks' width='300' />
+              </a>
               <div className='spacer-3'></div>
             </div>
           </div>
@@ -85,7 +91,9 @@ export class PartnersContent extends Component {
               </p>
             </div>
             <div className='box-2'>
-              <img src={imgHikVision} alt='IoT solution' width='300' />
+              <a href='https://www.hikvision.com/' target='_blank'>
+                <img src={imgHikVision} alt='IoT solution' width='300' />
+              </a>
               <div className='spacer-3'></div>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './FooterContent.scss'
 import logoRailworks from '../../../img/icons/railworks_whtlogo.png'
 import iconLocation from '../../../img/icons/favicon_whtlocation.png'
@@ -13,12 +14,14 @@ export class FooterContent extends Component {
     return (
       <div className='footer-style background-opacity'>
         <div className='box-content'>
-          <img
-            src={logoRailworks}
-            alt='Railworks Incorporated'
-            width='180'
-            className='railworks-logo'
-          />
+          <Link to={`/`} className='active'>
+            <img
+              src={logoRailworks}
+              alt='Railworks Incorporated'
+              width='180'
+              className='railworks-logo'
+            />
+          </Link>
 
           <div className='spacer-1'></div>
           <div className='nav'>
@@ -51,8 +54,14 @@ export class FooterContent extends Component {
             <section className='location'>
               <img src={iconLocation} width='18' height='18' />
               <p>
-                101 E. Aguinaldo Ave. AFPOVAI Phase I Western Bicutan, Taguig
-                City 1630 Philippines
+                <a
+                  href='https://www.google.com/maps/place/Railworks+Corporation/@14.5202409,121.0343059,17z/data=!3m1!4b1!4m5!3m4!1s0x3397c923a36a5983:0xf6401fbedfe87a9e!8m2!3d14.5202357!4d121.0364946'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  101 E. Aguinaldo Ave. AFPOVAI Phase I Western Bicutan, Taguig
+                  City 1630 Philippines
+                </a>
               </p>
             </section>
 
