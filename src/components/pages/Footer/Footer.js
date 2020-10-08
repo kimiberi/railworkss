@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import FooterContent from '../../layouts/FooterContent/FooterContent'
 
 export class Footer extends Component {
@@ -11,4 +12,4 @@ export class Footer extends Component {
   }
 }
 
-export default Footer
+export default withRouter(Footer)

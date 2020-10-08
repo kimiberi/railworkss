@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import './IntroductionContent.scss'
 import imgBranchOffice from '../../../img/branch-office.jpg'
 
@@ -31,4 +32,4 @@ export class IntroductionContent extends Component {
   }
 }
 
-export default IntroductionContent
+export default withRouter(IntroductionContent)

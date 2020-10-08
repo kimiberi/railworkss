@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import ServicesContent from '../../layouts/ServicesContent/ServicesContent'
 
 export class Services extends Component {
@@ -11,4 +12,4 @@ export class Services extends Component {
   }
 }
 
-export default Services
+export default withRouter(Services)

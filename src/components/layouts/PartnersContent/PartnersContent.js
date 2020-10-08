@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import './PartnersContent.scss'
 import imgHytera from '../../../img/logo_partners/hytera.png'
 import imgMotorola from '../../../img/logo_partners/motorola.png'
@@ -103,4 +104,4 @@ export class PartnersContent extends Component {
   }
 }
 
-export default PartnersContent
+export default withRouter(PartnersContent)

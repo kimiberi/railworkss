@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import WhatWeOfferContent from '../../layouts/WhatWeOfferContent/WhatWeOfferContent'
 
 export class WhatWeOffer extends Component {
@@ -11,4 +12,4 @@ export class WhatWeOffer extends Component {
   }
 }
 
-export default WhatWeOffer
+export default withRouter(WhatWeOffer)

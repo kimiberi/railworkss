@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import './HomepageContent.scss'
 import IntroductionContent from '../IntroductionContent/IntroductionContent'
 import WhatWeOfferContent from '../WhatWeOfferContent/WhatWeOfferContent'
@@ -114,4 +115,4 @@ export class HomepageContent extends Component {
   }
 }
 
-export default HomepageContent
+export default withRouter(HomepageContent)

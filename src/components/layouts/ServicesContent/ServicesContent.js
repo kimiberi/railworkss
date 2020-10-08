@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import './ServicesContent.scss'
 // import iconCheck from '../../../img/icons/checkwht.png'
 // import BGradio from '../../../img/backgrounds/walkie-talkie.jpg'
@@ -356,4 +357,4 @@ export class ServicesContent extends Component {
   }
 }
 
-export default ServicesContent
+export default withRouter(ServicesContent)

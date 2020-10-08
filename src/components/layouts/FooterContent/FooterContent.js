@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import './FooterContent.scss'
 import logoRailworks from '../../../img/icons/railworks_whtlogo.png'
 import iconLocation from '../../../img/icons/favicon_whtlocation.png'
@@ -123,4 +124,4 @@ export class FooterContent extends Component {
   }
 }
 
-export default FooterContent
+export default withRouter(FooterContent)

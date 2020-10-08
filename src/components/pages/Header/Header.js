@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import HeaderContent from '../../layouts/HeaderContent/HeaderContent'
 
 export class Header extends Component {
@@ -11,4 +12,4 @@ export class Header extends Component {
   }
 }
 
-export default Header
+export default withRouter(Header)
