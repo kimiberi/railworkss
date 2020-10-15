@@ -5,6 +5,7 @@ import IntroductionContent from '../IntroductionContent/IntroductionContent'
 import WhatWeOfferContent from '../WhatWeOfferContent/WhatWeOfferContent'
 import PartnersContent from '../PartnersContent/PartnersContent'
 import ServicesContent from '../ServicesContent/ServicesContent'
+import ProjectsContent from '../ProjectsContent/ProjectsContent'
 // import logoHytera from '../../../img/logo_partners/hytera.png'
 // import logoMotorola from '../../../img/logo_partners/motorola.png'
 // import logoRadwin from '../../../img/logo_partners/radwin.png'
@@ -24,6 +25,7 @@ export class HomepageContent extends Component {
         <WhatWeOfferContent />
         <PartnersContent />
         <ServicesContent />
+        <ProjectsContent />
 
         {/* <div className='partners-content'>
           <h2>Our Partners</h2>

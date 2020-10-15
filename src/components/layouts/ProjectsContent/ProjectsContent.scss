@@ -1,0 +1,29 @@
+// imports
+@import '../../../style/defaultStyle';
+
+.projects-style {
+  background: var(--white);
+  padding: var(--padding-big);
+
+  .box-content {
+    @include flex-type(space-between);
+    @include width(1200);
+
+    section {
+      height: 500px;
+      width: 300px;
+      box-shadow: 5px 5px 10px var(--gray-500);
+      font-size: 14px;
+      cursor: pointer;
+      margin-right: 20px;
+
+      .section-content {
+        background: var(--white);
+        padding: var(--padding-xs);
+      }
+    }
+    section:last-child {
+      margin-right: 0px;
+    }
+  }
+}

@@ -11,6 +11,7 @@ const routing = (
     <Route path='/about' component={Homepage} />
     <Route path='/partners' component={Homepage} />
     <Route path='/services' component={Homepage} />
+    <Route path='/projects' component={Homepage} />
   </Router>
 )
 

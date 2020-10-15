@@ -98,7 +98,14 @@ export class HeaderContent extends Component {
                 </a>
               </li>
               <li>
-                <a href='#projects'>Projects</a>
+                <a
+                  href='/projects#/projects'
+                  className={
+                    window.location.pathname == '/projects' ? 'active' : ''
+                  }
+                >
+                  Projects
+                </a>
               </li>
               <li>
                 <a href='#contact'>Contact Us</a>
