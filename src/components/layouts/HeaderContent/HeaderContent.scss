@@ -59,7 +59,7 @@
     box-shadow: 0px 21px 10px -15px var(--gray-901);
 
     .business-logo {
-      width: 100%;
+      width: 30%;
     }
 
     .nav {
@@ -71,11 +71,11 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-        display: flex;
-        justify-content: space-between;
+        @include flex-type(row);
+        justify-content: flex-end;
         letter-spacing: 2px;
         width: auto;
-        margin: auto;
+        // margin: auto;
       }
       ul li a {
         font-family: var(--fontfam-Raleway);
