@@ -2,12 +2,32 @@
 @import '../../../style/defaultStyle';
 
 .header-style {
+  .background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 150vh;
+    background-size: cover;
+    will-change: opacity;
+    object-fit: cover;
+    background: var(--black);
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   .contact-info {
     @include flex-type(space-between);
     height: 50px;
     background: var(--gray-901);
     color: var(--white);
     font-size: 12px;
+    position: relative;
+    z-index: 1;
 
     img {
       margin-right: 14px;
@@ -16,6 +36,7 @@
     a {
       font-family: var(--fontfam-Roboto);
       letter-spacing: 1px;
+      color: var(--white);
     }
     a:hover {
       color: var(--white);
@@ -163,6 +184,8 @@
   .box-content {
     @include width(1200);
     padding: 220px 30px 220px 30px;
+    position: relative;
+    z-index: 5;
 
     p.slogan {
       font-family: var(--fontfam-PlayfairDisplaySC);
@@ -170,6 +193,7 @@
       text-shadow: 9px 6px 5px var(--black);
       letter-spacing: 5px;
       font-size: 51px;
+      color: var(--white);
     }
     p.sub-slogan {
       font-family: var(--fontfam-JosefinSans);
@@ -177,13 +201,13 @@
       letter-spacing: 3px;
       font-size: 21px;
       margin-top: -50px;
+      color: var(--white);
     }
   }
 
   &.background-opacity {
     position: relative;
     overflow: hidden;
-    background-color: var(--black);
     z-index: 2;
   }
   &.background-opacity:before {
@@ -195,31 +219,8 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 50%;
+    opacity: 0.6;
     object-fit: cover;
-    background-image: url('../../../img/backgrounds/galaxy_radiotower.jpg');
-    background-position: center;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*
-        fixed = parallax
-        scroll = normal
-    */
-    background-attachment: fixed;
-  }
-  &.background-opacity p,
-  img,
-  a,
-  .contact-info,
-  .nav,
-  ul,
-  ul li a {
-    z-index: 3;
-    position: relative;
-    color: var(--white);
+    background: var(--black);
   }
 }

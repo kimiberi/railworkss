@@ -1,17 +1,61 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { useTransition, animated, config } from 'react-spring'
 import './HeaderContent.scss'
 import logoRailworks from '../../../img/icons/railworks_whtlogo.png'
 import iconLocation from '../../../img/icons/favicon_whtlocation.png'
 import iconPhone from '../../../img/icons/favicon_whtphone.png'
 import iconEmail from '../../../img/icons/favicon_whtemail.png'
+import keyVisualPublicTransit from '../../../img/backgrounds/publictransit.jpeg'
+import keyVisualRadioTower from '../../../img/backgrounds/galaxy_radiotower.jpg'
+import keyVisualRadioSignal from '../../../img/backgrounds/radiocommunication.jpg'
+
+// install npm install react-spring
+
+const slides = [
+  {
+    id: 0,
+    url: keyVisualPublicTransit,
+  },
+  {
+    id: 1,
+    url: keyVisualRadioTower,
+  },
+  {
+    id: 2,
+    url: keyVisualRadioSignal,
+  },
+]
+
+const App = () => {
+  const [index, set] = useState(0)
+  const transitions = useTransition(slides[index], (item) => item.id, {
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+    config: config.molasses,
+  })
+
+  useEffect(
+    () => void setInterval(() => set((state) => (state + 1) % 3), 5000),
+    []
+  )
+  return transitions.map(({ item, props, key }) => (
+    <animated.div
+      key={key}
+      className='background-animation'
+      style={{
+        ...props,
+        backgroundImage: `url(${item.url})`,
+        backgroundAttachment: 'fixed',
+      }}
+    ></animated.div>
+  ))
+}
 
 export class HeaderContent extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <div className='header-style background-opacity'>
@@ -120,6 +164,7 @@ export class HeaderContent extends Component {
         </div>
 
         <div className='down-pattern'></div>
+        <App />
       </div>
     )
   }
