@@ -9,8 +9,8 @@ export class ProjectsContent extends Component {
   render() {
     return (
       <div className='projects-style' id='/projects'>
-        <h2>Our Projects</h2>
-        <div className='box-content'>
+        <h2 className='gs_reveal'>Our Projects</h2>
+        <div className='box-content gs_reveal gs_reveal_fromLeft'>
           <section>
             <div
               style={{

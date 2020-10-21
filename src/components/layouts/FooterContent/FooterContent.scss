@@ -13,25 +13,67 @@
       color: var(--white);
     }
 
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: space-between;
-      width: 600px;
+    .nav {
+      width: 70%;
       margin: auto;
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      ul li a {
+        position: relative;
+        z-index: 0;
+        cursor: pointer;
+        margin: 0px 10px;
+        padding: 9px 10px;
+        text-decoration: none;
+        color: var(--white);
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+      ul li a.active:before {
+        position: absolute;
+        height: 2px;
+        content: '';
+        background: var(--theme-red);
+        transition: all 0.3s;
+      }
+      // ul li a.active {
+      //   border-bottom: 3px solid var(--theme-red);
+      //   padding-bottom: 5px;
+      // }
     }
-    ul li a {
-      text-decoration: none;
-      cursor: pointer;
-      color: var(--white);
-      text-transform: uppercase;
-      font-size: 14px;
+    .borderXwidth a:before,
+    .borderXwidth a:after {
+      position: absolute;
+      opacity: 0;
+      width: 0%;
+      height: 2px;
+      content: '';
+      background: var(--theme-red);
+      transition: all 0.3s;
     }
-    ul li a.active {
-      border-bottom: 3px solid var(--theme-red);
-      padding-bottom: 5px;
+
+    .borderXwidth a:before {
+      left: 0px;
+      top: 0px;
+    }
+
+    .borderXwidth a:after {
+      right: 0px;
+      bottom: 0px;
+    }
+
+    .borderXwidth a:hover:before,
+    .borderXwidth a:hover:after,
+    ul li a.active:before,
+    ul li a.active:after {
+      opacity: 1;
+      width: 100%;
     }
 
     .contact-information img {

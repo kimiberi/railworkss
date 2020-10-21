@@ -12,7 +12,7 @@ export class PartnersContent extends Component {
       <div className='partners-style' id='/partners'>
         <div className='box-content'>
           <div className='box-info'>
-            <div className='box-1'>
+            <div className='box-1 gs_reveal gs_reveal_fromLeft'>
               <h2 style={{ textAlign: 'left' }}>About Hytera</h2>
               <p>
                 <b>Hytera Communications Corporation Limited</b> is a global
@@ -24,7 +24,7 @@ export class PartnersContent extends Component {
                 improve organizational efficiency and make the world safer.
               </p>
             </div>
-            <div className='box-2'>
+            <div className='box-2 gs_reveal gs_reveal_fromRight'>
               <a href='https://hytera.ph/' target='_blank'>
                 <img src={imgHytera} alt='Personal Computer' width='300' />
               </a>
@@ -35,7 +35,7 @@ export class PartnersContent extends Component {
           <div className='spacer-4'></div>
 
           <div className='box-info reverse'>
-            <div className='box-1'>
+            <div className='box-1 gs_reveal gs_reveal_fromRight'>
               <h2 style={{ textAlign: 'left' }}>About Motorola</h2>
               <p>
                 <b>Motorola Solutions</b> is a global leader in mission-critical
@@ -45,7 +45,7 @@ export class PartnersContent extends Component {
                 businesses thrive.
               </p>
             </div>
-            <div className='box-2'>
+            <div className='box-2 gs_reveal gs_reveal_fromLeft'>
               <a href='https://www.motorolasolutions.com/' target='_blank'>
                 <img
                   src={imgMotorola}
@@ -60,7 +60,7 @@ export class PartnersContent extends Component {
           <div className='spacer-4'></div>
 
           <div className='box-info'>
-            <div className='box-1'>
+            <div className='box-1 gs_reveal gs_reveal_fromLeft'>
               <h2 style={{ textAlign: 'left' }}>About Radwin</h2>
               <p>
                 <b>RADWIN</b> is a wireless broadband hardware manufacturing
@@ -70,7 +70,7 @@ export class PartnersContent extends Component {
                 councils, remote communities, ISPs and private networks.
               </p>
             </div>
-            <div className='box-2'>
+            <div className='box-2 gs_reveal gs_reveal_fromRight'>
               <a href='https://www.radwin.com/' target='_blank'>
                 <img src={imgRadwin} alt='Private Networks' width='300' />
               </a>
@@ -81,7 +81,7 @@ export class PartnersContent extends Component {
           <div className='spacer-4'></div>
 
           <div className='box-info reverse'>
-            <div className='box-hikvision'>
+            <div className='box-hikvision gs_reveal gs_reveal_fromRight'>
               <h2 style={{ textAlign: 'left' }}>About Hikvision</h2>
               <p>
                 <b>Hikvision</b> is a world leading IoT solution provider with
@@ -91,7 +91,7 @@ export class PartnersContent extends Component {
                 vertical markets.
               </p>
             </div>
-            <div className='box-2'>
+            <div className='box-2 gs_reveal gs_reveal_fromLeft'>
               <a href='https://www.hikvision.com/' target='_blank'>
                 <img src={imgHikVision} alt='IoT solution' width='300' />
               </a>

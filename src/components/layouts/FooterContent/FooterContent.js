@@ -15,7 +15,7 @@ export class FooterContent extends Component {
     return (
       <div className='footer-style background-opacity'>
         <div className='box-content'>
-          <Link to={`/`} className='active'>
+          <Link to={`/`}>
             <img
               src={logoRailworks}
               alt='Railworks Incorporated'
@@ -25,27 +25,65 @@ export class FooterContent extends Component {
           </Link>
 
           <div className='spacer-1'></div>
-          <div className='nav'>
+          <div className='nav borderXwidth'>
             <ul>
               <li>
-                <a class='active' href='#home'>
+                <Link
+                  to={`/`}
+                  className={window.location.pathname == '/' ? 'active' : ''}
+                >
                   Home
+                </Link>
+              </li>
+              <li>
+                <a
+                  href='/about#/about'
+                  className={
+                    window.location.pathname == '/about' ? 'active' : ''
+                  }
+                >
+                  About
                 </a>
               </li>
               <li>
-                <a href='#about'>About</a>
+                <a
+                  href='/partners#/partners'
+                  className={
+                    window.location.pathname == '/partners' ? 'active' : ''
+                  }
+                >
+                  Partners
+                </a>
               </li>
               <li>
-                <a href='#contact'>Products</a>
+                <a
+                  href='/services#/services'
+                  className={
+                    window.location.pathname == '/services' ? 'active' : ''
+                  }
+                >
+                  Services
+                </a>
               </li>
               <li>
-                <a href='#services'>Services</a>
+                <a
+                  href='/projects#/projects'
+                  className={
+                    window.location.pathname == '/projects' ? 'active' : ''
+                  }
+                >
+                  Projects
+                </a>
               </li>
               <li>
-                <a href='#contact'>Projects</a>
-              </li>
-              <li>
-                <a href='#about'>Contact Us</a>
+                <a
+                  href='/contact'
+                  className={
+                    window.location.pathname == '/contact' ? 'active' : ''
+                  }
+                >
+                  Contact Us
+                </a>
               </li>
             </ul>
           </div>

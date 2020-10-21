@@ -12,9 +12,9 @@ export class WhatWeOfferContent extends Component {
         <section className='offer-content'>
           <div className='box-1 box-opacity'>
             <div className='box-content'>
-              <h2>What We Offer</h2>
+              <h2 className='gs_reveal'>What We Offer</h2>
 
-              <div className='flex-content'>
+              <div className='flex-content gs_reveal gs_reveal_fromLeft'>
                 <div className='content-1'>
                   <div className='box-info'>
                     <img

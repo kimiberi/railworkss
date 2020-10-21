@@ -8,16 +8,16 @@ export class IntroductionContent extends Component {
     return (
       <div className='intro-style' id='/about'>
         <div className='box-content'>
-          <div className='box-1 animation-effect'>
+          <div className='box-1 animation-effect gs_reveal gs_reveal_fromLeft'>
             <img src={imgBranchOffice} alt='Main Building Office' />
           </div>
           <div className='box-2'>
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <hr />
-              <h1>Who We Are</h1>
+              <h1 className='gs_reveal'>Who We Are</h1>
             </div>
             <div className='spacer-1'></div>
-            <p>
+            <p className='gs_reveal gs_reveal_fromRight'>
               <b>Railworks Corporation</b> expanded to Services specializing in
               Installation, Commissioning, Migration and Integration works.
               Target markets includes Public Safety Agency, Railway, Government

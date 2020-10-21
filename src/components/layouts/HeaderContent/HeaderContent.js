@@ -152,15 +152,26 @@ export class HeaderContent extends Component {
                 </a>
               </li>
               <li>
-                <a href='#contact'>Contact Us</a>
+                <a
+                  href='/contact'
+                  className={
+                    window.location.pathname == '/contact' ? 'active' : ''
+                  }
+                >
+                  Contact Us
+                </a>
               </li>
             </ul>
           </section>
         </div>
 
         <div className='box-content'>
-          <p className='slogan'>DELIVERING SYSTEMS</p>
-          <p className='sub-slogan'>FOR MISSION CRITICAL CHALLENGES</p>
+          <p className='slogan gs_reveal gs_reveal_fromLeft'>
+            DELIVERING SYSTEMS
+          </p>
+          <p className='sub-slogan gs_reveal'>
+            FOR MISSION CRITICAL CHALLENGES
+          </p>
         </div>
 
         <div className='down-pattern'></div>

@@ -61,6 +61,27 @@
             margin-top: 12px;
           }
         }
+
+        // FADE IN ANIMATION
+        // .flex-content {
+        //   opacity: 0;
+        //   animation-name: flex-content;
+        //   animation-duration: 3s;
+        //   animation-delay: 3s;
+        //   animation-fill-mode: forwards;
+
+        //   transition-property: transform;
+        //   transition-duration: 1s;
+        // }
+
+        // @keyframes flex-content {
+        //   0% {
+        //     opacity: 0;
+        //   }
+        //   100% {
+        //     opacity: 1;
+        //   }
+        // }
       }
 
       &.box-opacity {

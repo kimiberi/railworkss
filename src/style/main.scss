@@ -56,3 +56,10 @@ a {
 p {
   font-family: var(--fontfam-Raleway);
 }
+
+// GREENSOCKS ANIMATION
+.gs_reveal {
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0s;
+}

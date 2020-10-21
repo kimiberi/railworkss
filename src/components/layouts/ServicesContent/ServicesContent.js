@@ -305,8 +305,8 @@ function ParallaxContent() {
       <div className='top-pattern'></div>
 
       <section className='services-content background-opacity' id='/services'>
-        <h2>Our Services</h2>
-        <div className='box-content'>
+        <h2 className='gs_reveal'>Our Services</h2>
+        <div className='box-content gs_reveal gs_reveal_fromRight'>
           <div className='box-info'>
             <FlipCard_1 />
             <FlipCard_2 />

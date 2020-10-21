@@ -47,7 +47,7 @@ export class HomepageContent extends Component {
 
         <div className='customers-content'>
           <h2>Our Customers</h2>
-          <div className='box-content'>
+          <div className='box-content gs_reveal'>
             <a
               href='https://www.pnr.gov.ph/'
               target='_blank'
