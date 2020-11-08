@@ -15,25 +15,27 @@ export class FooterContent extends Component {
     return (
       <div className='footer-style background-opacity'>
         <div className='box-content'>
-          <Link to={`/`}>
+          {/* <Link to={`/`}>            
+          </Link> */}
+          <a href='/'>
             <img
               src={logoRailworks}
               alt='Railworks Incorporated'
               width='180'
               className='railworks-logo'
             />
-          </Link>
+          </a>
 
           <div className='spacer-1'></div>
           <div className='nav borderXwidth'>
             <ul>
               <li>
-                <Link
-                  to={`/`}
+                <a
+                  href='/'
                   className={window.location.pathname == '/' ? 'active' : ''}
                 >
                   Home
-                </Link>
+                </a>
               </li>
               <li>
                 <a

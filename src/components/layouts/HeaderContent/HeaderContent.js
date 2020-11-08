@@ -92,24 +92,30 @@ export class HeaderContent extends Component {
 
         <div className='navheader header-opacity'>
           <section className='business-logo'>
-            <Link to={`/`}>
+            <a href='/'>
               <img
                 src={logoRailworks}
                 alt='Railworks Incorporated'
                 width='150'
                 className='railworks-logo'
               />
-            </Link>
+            </a>
           </section>
           <section className='nav pullRight'>
             <ul>
               <li>
-                <Link
+                {/* <Link
                   to={`/`}
                   className={window.location.pathname == '/' ? 'active' : ''}
                 >
                   Home
-                </Link>
+                </Link> */}
+                <a
+                  href='/'
+                  className={window.location.pathname == '/' ? 'active' : ''}
+                >
+                  Home
+                </a>
               </li>
               <li>
                 <a

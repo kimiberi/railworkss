@@ -5,6 +5,7 @@ import imgHytera from '../../../img/logo_partners/hytera.png'
 import imgMotorola from '../../../img/logo_partners/motorola.png'
 import imgRadwin from '../../../img/logo_partners/radwin.png'
 import imgHikVision from '../../../img/logo_partners/hikvision.png'
+import { Button } from 'semantic-ui-react'
 
 export class PartnersContent extends Component {
   render() {
@@ -23,6 +24,10 @@ export class PartnersContent extends Component {
                 security, utility, transportation, enterprise and business to
                 improve organizational efficiency and make the world safer.
               </p>
+              <br />
+              <Button color='red' style={{ width: '120px', height: '40px' }}>
+                View More
+              </Button>
             </div>
             <div className='box-2 gs_reveal gs_reveal_fromRight'>
               <a href='https://hytera.ph/' target='_blank'>
@@ -44,6 +49,10 @@ export class PartnersContent extends Component {
                 and support services make cities safer and help communities and
                 businesses thrive.
               </p>
+              <br />
+              <Button color='red' style={{ width: '120px', height: '40px' }}>
+                View More
+              </Button>
             </div>
             <div className='box-2 gs_reveal gs_reveal_fromLeft'>
               <a href='https://www.motorolasolutions.com/' target='_blank'>
@@ -69,6 +78,10 @@ export class PartnersContent extends Component {
                 Its products are used by telecoms carriers, city and town
                 councils, remote communities, ISPs and private networks.
               </p>
+              <br />
+              <Button color='red' style={{ width: '120px', height: '40px' }}>
+                View More
+              </Button>
             </div>
             <div className='box-2 gs_reveal gs_reveal_fromRight'>
               <a href='https://www.radwin.com/' target='_blank'>
@@ -90,6 +103,10 @@ export class PartnersContent extends Component {
                 comprehensive products and solutions for a broad range of
                 vertical markets.
               </p>
+              <br />
+              <Button color='red' style={{ width: '120px', height: '40px' }}>
+                View More
+              </Button>
             </div>
             <div className='box-2 gs_reveal gs_reveal_fromLeft'>
               <a href='https://www.hikvision.com/' target='_blank'>

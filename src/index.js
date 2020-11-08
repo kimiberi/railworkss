@@ -1,9 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import ReactDOM from 'react-dom'
-import App from './App'
-import './style/main.scss'
 import { Homepage } from './components/pages/Homepage/Homepage'
+import './style/main.scss'
+import 'semantic-ui-css/semantic.min.css'
 
 const routing = (
   <Router>
