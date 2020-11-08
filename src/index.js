@@ -1,9 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import ReactDOM from 'react-dom'
-import { Homepage } from './components/pages/Homepage/Homepage'
 import './style/main.scss'
 import 'semantic-ui-css/semantic.min.css'
+import { Homepage } from './components/pages/Homepage/Homepage'
+import { Hytera } from './components/pages/Hytera/Hytera'
 
 const routing = (
   <Router>
@@ -13,6 +14,7 @@ const routing = (
     <Route path='/services' component={Homepage} />
     <Route path='/projects' component={Homepage} />
     <Route path='/contact' component={Homepage} />
+    <Route path='/hytera' component={Hytera} />
   </Router>
 )
 

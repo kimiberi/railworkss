@@ -13,6 +13,9 @@ export class PageHeaderContent extends Component {
   }
 
   render() {
+    const activePage = this.props.activePage
+    const headings = this.props.headings
+
     return (
       <div className='pageheader-style background-opacity'>
         <div className='contact-info'>
@@ -81,7 +84,7 @@ export class PageHeaderContent extends Component {
                 <a
                   href='/partners#/partners'
                   className={
-                    window.location.pathname == '/partners' ? 'active' : ''
+                    window.location.pathname == `/${activePage}` ? 'active' : ''
                   }
                 >
                   Partners
@@ -108,7 +111,7 @@ export class PageHeaderContent extends Component {
         </div>
 
         <div className='box-content'>
-          <h1 className='slogan'>CONTACT US</h1>
+          <h1 className='slogan'>{headings}</h1>
         </div>
         <div className='down-pattern'></div>
       </div>

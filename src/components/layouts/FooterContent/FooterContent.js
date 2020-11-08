@@ -12,6 +12,8 @@ import iconInstagram from '../../../img/icons/instagramwht-circle.png'
 
 export class FooterContent extends Component {
   render() {
+    const activePage = this.props.activePage
+
     return (
       <div className='footer-style background-opacity'>
         <div className='box-content'>
@@ -51,7 +53,7 @@ export class FooterContent extends Component {
                 <a
                   href='/partners#/partners'
                   className={
-                    window.location.pathname == '/partners' ? 'active' : ''
+                    window.location.pathname == `/${activePage}` ? 'active' : ''
                   }
                 >
                   Partners

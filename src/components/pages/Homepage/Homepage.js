@@ -10,11 +10,11 @@ export class Homepage extends Component {
   render() {
     return (
       <div>
-        <PageHeaderContent />
+        {/* <PageHeaderContent /> */}
         {/* <Test /> */}
         <HeaderContent />
         <HomepageContent />
-        <FooterContent />
+        <FooterContent activePage={'partners'} />
       </div>
     )
   }

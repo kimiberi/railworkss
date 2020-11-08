@@ -1,0 +1,13 @@
+@import '../../../style/defaultStyle';
+
+.hyteracontent-style {
+  padding: var(--padding-big);
+  background: var(--white);
+  position: relative;
+  z-index: 7;
+  margin-top: -1px;
+
+  .box-content {
+    @include width(1200);
+  }
+}

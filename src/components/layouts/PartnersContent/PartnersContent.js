@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './PartnersContent.scss'
 import imgHytera from '../../../img/logo_partners/hytera.png'
 import imgMotorola from '../../../img/logo_partners/motorola.png'
@@ -25,9 +26,11 @@ export class PartnersContent extends Component {
                 improve organizational efficiency and make the world safer.
               </p>
               <br />
-              <Button color='red' style={{ width: '120px', height: '40px' }}>
-                View More
-              </Button>
+              <Link to={`/hytera`}>
+                <Button color='red' style={{ width: '120px', height: '40px' }}>
+                  View More
+                </Button>
+              </Link>
             </div>
             <div className='box-2 gs_reveal gs_reveal_fromRight'>
               <a href='https://hytera.ph/' target='_blank'>

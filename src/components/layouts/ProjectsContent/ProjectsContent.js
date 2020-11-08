@@ -18,10 +18,10 @@ export class ProjectsContent extends Component {
                 width: '100%',
                 backgroundImage:
                   'url(' +
-                  require('../../../img/projects/hytera_box.jpg') +
+                  require('../../../img/projects/hyteraradio.jpg') +
                   ')',
                 backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                backgroundPosition: 'bottom',
                 backgroundRepeat: 'no-repeat',
               }}
             />
@@ -46,9 +46,9 @@ export class ProjectsContent extends Component {
                 Application: Supply, Delivery, and Testing of Communication
                 Equipment
               </p>
-              <p>
+              {/* <p>
                 Worth: <b>Php 12,000,000.00</b>
-              </p>
+              </p> */}
               <p>Completed: July 2018</p>
               <p>
                 <a href='#'>See More »</a>
@@ -87,9 +87,9 @@ export class ProjectsContent extends Component {
                 Application: Supply and Delivery of Various UHF Commercial
                 Radios
               </p>
-              <p>
+              {/* <p>
                 Worth: <b>Php 7,900,000.00</b>
-              </p>
+              </p> */}
               <p>Completed: November 2019</p>
               <a href='#'>See More »</a>
             </div>
@@ -127,9 +127,9 @@ export class ProjectsContent extends Component {
               <p>
                 Application: Supply, Delivery, Installation, Commissioning...
               </p>
-              <p>
+              {/* <p>
                 Worth: <b>Php 150,000,000.00</b>
-              </p>
+              </p> */}
               <p>Completed: December 2019</p>
               <a href='#'>See More »</a>
             </div>
@@ -168,9 +168,9 @@ export class ProjectsContent extends Component {
                 Application: Restoration of Fiber Optic Cable Communication
                 Backbone
               </p>
-              <p>
+              {/* <p>
                 Worth: <b>Php 2,500,000.00</b>
-              </p>
+              </p> */}
               <p>Completed: February 2020</p>
               <a href='#'>See More »</a>
             </div>
