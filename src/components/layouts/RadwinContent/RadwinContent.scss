@@ -1,0 +1,13 @@
+@import '../../../style/defaultStyle';
+
+.radwincontent-style {
+  position: relative;
+  z-index: 7;
+  margin-top: -1px;
+  padding: var(--padding-big);
+  background: var(--white);
+
+  .box-content {
+    @include width(1200);
+  }
+}

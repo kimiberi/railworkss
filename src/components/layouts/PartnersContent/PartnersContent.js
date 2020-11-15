@@ -84,9 +84,11 @@ export class PartnersContent extends Component {
                 councils, remote communities, ISPs and private networks.
               </p>
               <br />
-              <Button color='red' style={{ width: '120px', height: '40px' }}>
-                View More
-              </Button>
+              <Link to={`/radwin`}>
+                <Button color='red' style={{ width: '120px', height: '40px' }}>
+                  View More
+                </Button>
+              </Link>
             </div>
             <div className='box-2 gs_reveal gs_reveal_fromRight'>
               <a href='https://www.radwin.com/' target='_blank'>
@@ -109,9 +111,11 @@ export class PartnersContent extends Component {
                 vertical markets.
               </p>
               <br />
-              <Button color='red' style={{ width: '120px', height: '40px' }}>
-                View More
-              </Button>
+              <Link to={`/hikvision`}>
+                <Button color='red' style={{ width: '120px', height: '40px' }}>
+                  View More
+                </Button>
+              </Link>
             </div>
             <div className='box-2 gs_reveal gs_reveal_fromLeft'>
               <a href='https://www.hikvision.com/' target='_blank'>

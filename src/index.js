@@ -7,6 +7,8 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Homepage } from './components/pages/Homepage/Homepage'
 import { Hytera } from './components/pages/Hytera/Hytera'
 import { Motorola } from './components/pages/Motorola/Motorola'
+import { Radwin } from './components/pages/Radwin/Radwin'
+import { Hikvision } from './components/pages/Hikvision/Hikvision'
 
 const routing = (
   <Router>
@@ -18,6 +20,8 @@ const routing = (
     <Route path='/contact' component={Homepage} />
     <Route path='/hytera' component={Hytera} />
     <Route path='/motorola' component={Motorola} />
+    <Route path='/radwin' component={Radwin} />
+    <Route path='/hikvision' component={Hikvision} />
   </Router>
 )
 
