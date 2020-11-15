@@ -53,9 +53,11 @@ export class PartnersContent extends Component {
                 businesses thrive.
               </p>
               <br />
-              <Button color='red' style={{ width: '120px', height: '40px' }}>
-                View More
-              </Button>
+              <Link to={`/motorola`}>
+                <Button color='red' style={{ width: '120px', height: '40px' }}>
+                  View More
+                </Button>
+              </Link>
             </div>
             <div className='box-2 gs_reveal gs_reveal_fromLeft'>
               <a href='https://www.motorolasolutions.com/' target='_blank'>

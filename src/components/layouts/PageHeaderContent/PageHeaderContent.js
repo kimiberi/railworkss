@@ -63,12 +63,18 @@ export class PageHeaderContent extends Component {
           <section className='nav pullRight'>
             <ul>
               <li>
-                <Link
+                {/* <Link
                   to={`/`}
                   className={window.location.pathname == '/' ? 'active' : ''}
                 >
                   Home
-                </Link>
+                </Link> */}
+                <a
+                  href='/'
+                  className={window.location.pathname == '/' ? 'active' : ''}
+                >
+                  Home
+                </a>
               </li>
               <li>
                 <a
