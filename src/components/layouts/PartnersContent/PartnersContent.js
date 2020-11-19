@@ -26,11 +26,16 @@ export class PartnersContent extends Component {
                 improve organizational efficiency and make the world safer.
               </p>
               <br />
-              <Link to={`/hytera`}>
+              <a
+                href='/hytera'
+                className={
+                  window.location.pathname == '/hytera' ? 'active' : ''
+                }
+              >
                 <Button color='red' style={{ width: '120px', height: '40px' }}>
                   View More
                 </Button>
-              </Link>
+              </a>
             </div>
             <div className='box-2 gs_reveal gs_reveal_fromRight'>
               <a href='https://hytera.ph/' target='_blank'>
@@ -53,11 +58,11 @@ export class PartnersContent extends Component {
                 businesses thrive.
               </p>
               <br />
-              <Link to={`/motorola`}>
+              <a href='/motorola'>
                 <Button color='red' style={{ width: '120px', height: '40px' }}>
                   View More
                 </Button>
-              </Link>
+              </a>
             </div>
             <div className='box-2 gs_reveal gs_reveal_fromLeft'>
               <a href='https://www.motorolasolutions.com/' target='_blank'>
@@ -84,11 +89,11 @@ export class PartnersContent extends Component {
                 councils, remote communities, ISPs and private networks.
               </p>
               <br />
-              <Link to={`/radwin`}>
+              <a href='/radwin'>
                 <Button color='red' style={{ width: '120px', height: '40px' }}>
                   View More
                 </Button>
-              </Link>
+              </a>
             </div>
             <div className='box-2 gs_reveal gs_reveal_fromRight'>
               <a href='https://www.radwin.com/' target='_blank'>
@@ -111,11 +116,11 @@ export class PartnersContent extends Component {
                 vertical markets.
               </p>
               <br />
-              <Link to={`/hikvision`}>
+              <a href='/hikvision'>
                 <Button color='red' style={{ width: '120px', height: '40px' }}>
                   View More
                 </Button>
-              </Link>
+              </a>
             </div>
             <div className='box-2 gs_reveal gs_reveal_fromLeft'>
               <a href='https://www.hikvision.com/' target='_blank'>

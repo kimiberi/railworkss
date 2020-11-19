@@ -56,7 +56,7 @@ const BackgroundFlipCard_1 = styled.div({
   position: 'relative',
   width: '320px',
   height: '230px',
-  cursor: 'pointer',
+  // cursor: 'pointer',
   backgroundImage:
     'url(' + require('../../../img/backgrounds/handyradio.jpg') + ')',
 
@@ -83,7 +83,7 @@ function FlipCard_1() {
               Installation, Comissioning and Integration Services (Turnkey
               Projects)
             </Paragraph>
-            <CTA>View More +</CTA>
+            {/* <CTA>View More +</CTA> */}
           </Hover>
         </DisplayOver>
       </BackgroundFlipCard_1>
@@ -94,13 +94,14 @@ function FlipCard_1() {
 const BackgroundFlipCard_2 = styled.div({
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
+  backgroundPosition: 'bottom',
   color: '#FFF',
   position: 'relative',
   width: '320px',
   height: '230px',
-  cursor: 'pointer',
+  // cursor: 'pointer',
   backgroundImage:
-    'url(' + require('../../../img/backgrounds/wiredcabling.jpg') + ')',
+    'url(' + require('../../../img/our_services/ancillary.jpg') + ')',
 
   [`:hover ${DisplayOver}`]: {
     backgroundColor: 'rgba(0,0,0,.9)',
@@ -125,7 +126,7 @@ function FlipCard_2() {
               Supply of ancillary materials (Power Systems, Batteries,
               Grounding, Structured Cabling, Equipment Racks, etc.)
             </Paragraph>
-            <CTA>View More +</CTA>
+            {/* <CTA>View More +</CTA> */}
           </Hover>
         </DisplayOver>
       </BackgroundFlipCard_2>
@@ -140,7 +141,7 @@ const BackgroundFlipCard_3 = styled.div({
   position: 'relative',
   width: '320px',
   height: '230px',
-  cursor: 'pointer',
+  // cursor: 'pointer',
   backgroundImage:
     'url(' + require('../../../img/backgrounds/cabling.jpeg') + ')',
 
@@ -166,7 +167,7 @@ function FlipCard_3() {
             <Paragraph>
               Supply, Design and Installation of Fiber Optic Cables (FOC)
             </Paragraph>
-            <CTA>View More +</CTA>
+            {/* <CTA>View More +</CTA> */}
           </Hover>
         </DisplayOver>
       </BackgroundFlipCard_3>
@@ -181,9 +182,8 @@ const BackgroundFlipCard_4 = styled.div({
   position: 'relative',
   width: '320px',
   height: '230px',
-  cursor: 'pointer',
-  backgroundImage:
-    'url(' + require('../../../img/backgrounds/walkietalkie_case.jpg') + ')',
+  // cursor: 'pointer',
+  backgroundImage: 'url(' + require('../../../img/our_services/dmr.jpg') + ')',
 
   [`:hover ${DisplayOver}`]: {
     backgroundColor: 'rgba(0,0,0,.9)',
@@ -208,7 +208,7 @@ function FlipCard_4() {
               Supply, Installation and Commissioning of Digital Radio System
               (DMR Conventional, DMR Trunking and TETRA System)
             </Paragraph>
-            <CTA>View More +</CTA>
+            {/* <CTA>View More +</CTA> */}
           </Hover>
         </DisplayOver>
       </BackgroundFlipCard_4>
@@ -223,7 +223,7 @@ const BackgroundFlipCard_5 = styled.div({
   position: 'relative',
   width: '320px',
   height: '230px',
-  cursor: 'pointer',
+  // cursor: 'pointer',
   backgroundImage:
     'url(' + require('../../../img/backgrounds/constructionworker.jpg') + ')',
 
@@ -249,7 +249,7 @@ function FlipCard_5() {
             <Paragraph>
               Structural Design Engineering and Construction (with PCAB License)
             </Paragraph>
-            <CTA>View More +</CTA>
+            {/* <CTA>View More +</CTA> */}
           </Hover>
         </DisplayOver>
       </BackgroundFlipCard_5>
@@ -260,13 +260,14 @@ function FlipCard_5() {
 const BackgroundFlipCard_6 = styled.div({
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
+  backgroundPosition: 'bottom',
   color: '#FFF',
   position: 'relative',
   width: '320px',
   height: '230px',
-  cursor: 'pointer',
+  // cursor: 'pointer',
   backgroundImage:
-    'url(' + require('../../../img/backgrounds/cableladder.jpg') + ')',
+    'url(' + require('../../../img/our_services/antenna.jpg') + ')',
 
   [`:hover ${DisplayOver}`]: {
     backgroundColor: 'rgba(0,0,0,.9)',
@@ -291,7 +292,7 @@ function FlipCard_6() {
               Metal Fabrication i.e. cable ladders, antenna brackets, PT mast
               and equipment cabinets.
             </Paragraph>
-            <CTA>View More +</CTA>
+            {/* <CTA>View More +</CTA> */}
           </Hover>
         </DisplayOver>
       </BackgroundFlipCard_6>
@@ -317,30 +318,6 @@ function ParallaxContent() {
             <FlipCard_5 />
             <FlipCard_6 />
           </div>
-          {/* <div className="box-info">
-                        <img src={iconCheck} alt="check icon" width="24" style={{marginRight: '20px'}} />
-                        <p>Installation, Comissioning and Integration Services (Turnkey Projects)</p>
-                    </div>
-                    <div className="box-info">
-                        <img src={iconCheck} alt="check icon" width="24" style={{marginRight: '20px'}} />
-                        <p>Supply of ancillary materials (Power Systems, Batteries, Grounding, Structured Cabling, Equipment Racks, etc.)</p>
-                    </div>
-                    <div className="box-info">
-                        <img src={iconCheck} alt="check icon" width="24" style={{marginRight: '20px'}} />
-                        <p>Supply, Design and Installation of Fiber Optic Cables (FOC)</p>
-                    </div>
-                    <div className="box-info">
-                        <img src={iconCheck} alt="check icon" width="24" style={{marginRight: '20px'}} />
-                        <p>Supply, Installation and Commissioning of Digital Radio System (DMR Conventional, DMR Trunking and TETRA System)</p>
-                    </div>
-                    <div className="box-info">
-                        <img src={iconCheck} alt="check icon" width="24" style={{marginRight: '20px'}} />
-                        <p>Structural Design Engineering and Construction (with PCAB License)</p>
-                    </div>
-                    <div className="box-info">
-                        <img src={iconCheck} alt="check icon" width="24" style={{marginRight: '20px'}} />
-                        <p>Metal Fabrication i.e. cable ladders, antenna brackets, PT mast and equipment cabinets.</p>
-                    </div> */}
         </div>
       </section>
     </div>

@@ -51,14 +51,17 @@ export class PageHeaderContent extends Component {
 
         <div className='navheader header-opacity'>
           <section className='business-logo'>
-            <Link to={`/`}>
+            <a
+              href='/'
+              className={window.location.pathname == '/' ? 'active' : ''}
+            >
               <img
                 src={logoRailworks}
                 alt='Railworks Incorporated'
                 width='150'
                 className='railworks-logo'
               />
-            </Link>
+            </a>
           </section>
           <section className='nav pullRight'>
             <ul>
@@ -107,10 +110,24 @@ export class PageHeaderContent extends Component {
                 </a>
               </li>
               <li>
-                <a href='#projects'>Projects</a>
+                <a
+                  href='/projects#/projects'
+                  className={
+                    window.location.pathname == '/projects' ? 'active' : ''
+                  }
+                >
+                  Projects
+                </a>
               </li>
               <li>
-                <a href='#contact'>Contact Us</a>
+                <a
+                  href='/contact'
+                  className={
+                    window.location.pathname == '/contact' ? 'active' : ''
+                  }
+                >
+                  Contact Us
+                </a>
               </li>
             </ul>
           </section>

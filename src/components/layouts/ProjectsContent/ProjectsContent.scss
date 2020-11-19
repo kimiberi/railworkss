@@ -5,6 +5,10 @@
   background: var(--white);
   padding: var(--padding-big);
 
+  h3.center {
+    text-align: center;
+  }
+
   .box-content {
     @include flex-type(space-between);
     @include width(1200);
@@ -14,7 +18,6 @@
       width: 300px;
       box-shadow: 5px 5px 10px var(--gray-500);
       font-size: 14px;
-      cursor: pointer;
       margin-right: 20px;
 
       .section-content {

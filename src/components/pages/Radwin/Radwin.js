@@ -8,7 +8,7 @@ export class Radwin extends Component {
   render() {
     return (
       <div>
-        <PageHeaderContent headings={'ABOUT BALDWIN'} activePage={'radwin'} />
+        <PageHeaderContent headings={'ABOUT RADWIN'} activePage={'radwin'} />
         <RadwinContent />
         <FooterContent activePage={'radwin'} />
       </div>
