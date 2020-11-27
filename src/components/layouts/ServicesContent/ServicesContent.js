@@ -50,15 +50,18 @@ const CTA = styled.a({
 })
 
 const BackgroundFlipCard_1 = styled.div({
-  backgroundSize: 'cover',
+  backgroundSize: '100%',
   backgroundRepeat: 'no-repeat',
+  backgroundPosition: 'center',
+
   color: '#FFF',
   position: 'relative',
   width: '320px',
   height: '230px',
+  textAlign: 'center',
   // cursor: 'pointer',
   backgroundImage:
-    'url(' + require('../../../img/backgrounds/handyradio.jpg') + ')',
+    'url(' + require('../../../img/our_services/project_img_1.jpg') + ')',
 
   [`:hover ${DisplayOver}`]: {
     backgroundColor: 'rgba(0,0,0,.9)',
@@ -92,16 +95,17 @@ function FlipCard_1() {
 }
 
 const BackgroundFlipCard_2 = styled.div({
-  backgroundSize: 'cover',
+  backgroundSize: '100%',
   backgroundRepeat: 'no-repeat',
-  backgroundPosition: 'bottom',
+  backgroundPosition: 'center',
   color: '#FFF',
   position: 'relative',
   width: '320px',
   height: '230px',
+  textAlign: 'center',
   // cursor: 'pointer',
   backgroundImage:
-    'url(' + require('../../../img/our_services/ancillary.jpg') + ')',
+    'url(' + require('../../../img/our_services/project_img_2.jpg') + ')',
 
   [`:hover ${DisplayOver}`]: {
     backgroundColor: 'rgba(0,0,0,.9)',
@@ -141,9 +145,10 @@ const BackgroundFlipCard_3 = styled.div({
   position: 'relative',
   width: '320px',
   height: '230px',
+  textAlign: 'center',
   // cursor: 'pointer',
   backgroundImage:
-    'url(' + require('../../../img/backgrounds/cabling.jpeg') + ')',
+    'url(' + require('../../../img/our_services/project_img_3.jpg') + ')',
 
   [`:hover ${DisplayOver}`]: {
     backgroundColor: 'rgba(0,0,0,.9)',
@@ -165,7 +170,7 @@ function FlipCard_3() {
           <Hover>
             {/* <SubTitle></SubTitle> */}
             <Paragraph>
-              Supply, Design and Installation of Fiber Optic Cables (FOC)
+              Design and Installation of Fiber Optic Cables (FOC)
             </Paragraph>
             {/* <CTA>View More +</CTA> */}
           </Hover>
@@ -182,8 +187,9 @@ const BackgroundFlipCard_4 = styled.div({
   position: 'relative',
   width: '320px',
   height: '230px',
+  textAlign: 'center',
   // cursor: 'pointer',
-  backgroundImage: 'url(' + require('../../../img/our_services/dmr.jpg') + ')',
+  backgroundImage: 'url(' + require('../../../img/our_services/project_img_4.jpg') + ')',
 
   [`:hover ${DisplayOver}`]: {
     backgroundColor: 'rgba(0,0,0,.9)',
@@ -205,7 +211,7 @@ function FlipCard_4() {
           <Hover>
             {/* <SubTitle></SubTitle> */}
             <Paragraph>
-              Supply, Installation and Commissioning of Digital Radio System
+              Installation and Commissioning of Digital Radio System
               (DMR Conventional, DMR Trunking and TETRA System)
             </Paragraph>
             {/* <CTA>View More +</CTA> */}
@@ -223,9 +229,10 @@ const BackgroundFlipCard_5 = styled.div({
   position: 'relative',
   width: '320px',
   height: '230px',
+  textAlign: 'center',
   // cursor: 'pointer',
   backgroundImage:
-    'url(' + require('../../../img/backgrounds/constructionworker.jpg') + ')',
+    'url(' + require('../../../img/our_services/project_img_5.jpeg') + ')',
 
   [`:hover ${DisplayOver}`]: {
     backgroundColor: 'rgba(0,0,0,.9)',
@@ -247,7 +254,8 @@ function FlipCard_5() {
           <Hover>
             {/* <SubTitle></SubTitle> */}
             <Paragraph>
-              Structural Design Engineering and Construction (with PCAB License)
+              {/* Structural Design Engineering and Construction (with PCAB License) */}
+              Project Management and Engineering Consultancy Services.
             </Paragraph>
             {/* <CTA>View More +</CTA> */}
           </Hover>
@@ -265,9 +273,10 @@ const BackgroundFlipCard_6 = styled.div({
   position: 'relative',
   width: '320px',
   height: '230px',
+  textAlign: 'center',
   // cursor: 'pointer',
   backgroundImage:
-    'url(' + require('../../../img/our_services/antenna.jpg') + ')',
+    'url(' + require('../../../img/our_services/project_img_6.jpg') + ')',
 
   [`:hover ${DisplayOver}`]: {
     backgroundColor: 'rgba(0,0,0,.9)',
@@ -289,8 +298,7 @@ function FlipCard_6() {
           <Hover>
             {/* <SubTitle></SubTitle> */}
             <Paragraph>
-              Metal Fabrication i.e. cable ladders, antenna brackets, PT mast
-              and equipment cabinets.
+              Structural Design Engineering and Construction Services (with PCAB License).
             </Paragraph>
             {/* <CTA>View More +</CTA> */}
           </Hover>

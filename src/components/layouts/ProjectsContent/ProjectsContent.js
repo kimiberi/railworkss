@@ -37,15 +37,15 @@ export class ProjectsContent extends Component {
               >
                 Completed Project
               </span>
-              <span style={{ color: 'var(--gray-600)', fontSize: '12px' }}>
+              {/* <span style={{ color: 'var(--gray-600)', fontSize: '12px' }}>
                 {moment().format(' • MMM DD YYYY')} • by admin
-              </span>
+              </span> */}
 
               <h3 style={{ marginTop: '6px' }}>
                 End-User: Philippine Drug Enforcement Agency
               </h3>
               <p>
-                Application: Supply, Delivery, and Testing of Communication
+                Supply, Delivery, and Testing of Communication
                 Equipment
               </p>
               <p>Completed: July 2018</p>
@@ -77,13 +77,13 @@ export class ProjectsContent extends Component {
               >
                 Completed Project
               </span>
-              <span style={{ color: 'var(--gray-600)', fontSize: '12px' }}>
+              {/* <span style={{ color: 'var(--gray-600)', fontSize: '12px' }}>
                 {moment().format(' • MMM DD YYYY')} • by admin
-              </span>
+              </span> */}
 
               <h3 style={{ marginTop: '6px' }}>End-User: Philippine Army</h3>
               <p>
-                Application: Supply and Delivery of Various UHF Commercial
+                Supply and Delivery of Various UHF Commercial
                 Radios
               </p>
               <p>Completed: November 2019</p>
@@ -113,18 +113,22 @@ export class ProjectsContent extends Component {
               >
                 Completed Project
               </span>
-              <span style={{ color: 'var(--gray-600)', fontSize: '12px' }}>
+              {/* <span style={{ color: 'var(--gray-600)', fontSize: '12px' }}>
                 {moment().format(' • MMM DD YYYY')} • by admin
-              </span>
+              </span> */}
 
-              <h3 style={{ marginTop: '6px' }}>
-                End-User: Bureau of Fire and Prevention (BFP)
+              <h3 style={{ marginTop: '4px' }}>
+                End-User: Bureau of Fire Protection (BFP)
               </h3>
               <p>
-                Application: Installation and Commission of Wireless IP Radio
-                Link between Regions
+                Supply, Delivery and Installation of Digital Radio System For BFP Region IV-A & Region II
               </p>
-              <p>Completed: December 2019</p>
+              <p>Completed: June 2019</p>
+              <p>
+                Supply and Delivery HF Radio for Bureau of Fire Protection
+              </p>
+              <p>Completed: July 2018</p>
+            
               {/* <a href='#'>See More »</a> */}
             </div>
           </section>
@@ -151,15 +155,15 @@ export class ProjectsContent extends Component {
               >
                 Completed Project
               </span>
-              <span style={{ color: 'var(--gray-600)', fontSize: '12px' }}>
+              {/* <span style={{ color: 'var(--gray-600)', fontSize: '12px' }}>
                 {moment().format(' • MMM DD YYYY')} • by admin
-              </span>
+              </span> */}
 
               <h3 style={{ marginTop: '6px' }}>
                 End-User: Light Rail Transit Authority (LRTA)
               </h3>
               <p>
-                Application: Restoration of Fiber Optic Cable Communication
+                Restoration of Fiber Optic Cable Communication
                 Backbone
               </p>
               <p>Completed: February 2020</p>
@@ -196,19 +200,20 @@ export class ProjectsContent extends Component {
               >
                 Ongoing Project
               </span>
-              <span style={{ color: 'var(--gray-600)', fontSize: '12px' }}>
+              {/* <span style={{ color: 'var(--gray-600)', fontSize: '12px' }}>
                 {moment().format(' • MMM DD YYYY')} • by admin
-              </span>
+              </span> */}
 
               <h3 style={{ marginTop: '6px' }}>
-                End-User: Philippine National Railways (PNR)
+                End-User: Light Rail Transit Authority (LRTA)
               </h3>
               <p>
-                Application: Supply of Telephone Equipment and TETRA Base
+                Supply of Telephone Equipment and TETRA Base
                 Station Synchronization (TBS-SYN) and Tetra radio switch
                 upgrade.
               </p>
-              <p>Started: NOA</p>
+
+              <p>Started: August 2020</p>
               {/* <p>
                 <a href='#'>See More »</a>
               </p> */}
@@ -240,18 +245,26 @@ export class ProjectsContent extends Component {
               >
                 Ongoing Project
               </span>
-              <span style={{ color: 'var(--gray-600)', fontSize: '12px' }}>
+              {/* <span style={{ color: 'var(--gray-600)', fontSize: '12px' }}>
                 {moment().format(' • MMM DD YYYY')} • by admin
-              </span>
+              </span> */}
 
               <h3 style={{ marginTop: '6px' }}>
                 End-User: Philippine National Railways (PNR)
               </h3>
               <p>
-                Application: Supply, Delivery, and Installation of PNR HF Data
+                Installation, Testing and Commissioning of 
+                Terrestial Trunk Radio (TETRA) System
+              </p>
+
+              <p>Started: November 2019</p>
+                
+              <p>
+                Supply, Delivery, and Installation of PNR HF Data
                 Communication
               </p>
               <p>Started: January 2020</p>
+
               {/* <a href='#'>See More »</a> */}
             </div>
           </section>
@@ -283,63 +296,23 @@ export class ProjectsContent extends Component {
               >
                 Ongoing Project
               </span>
-              <span style={{ color: 'var(--gray-600)', fontSize: '12px' }}>
+              {/* <span style={{ color: 'var(--gray-600)', fontSize: '12px' }}>
                 {moment().format(' • MMM DD YYYY')} • by admin
-              </span>
+              </span> */}
 
               <h3 style={{ marginTop: '6px' }}>
-                End-User: Bureau of Fire and Prevention (BFP)
+                End-User: Bureau of Fire Protection (BFP)
               </h3>
               <p>
-                Application: Supply, Delivery, Installation, Commissioning, and
-                Testing of DMR Conventional System for Region 10 Installation
-                and Commission of Wireless IP Radio Link between Regions
+                Supply, Delivery, Installation, Testing and Commissioning
+                of Digital Radio System for BFP Region X
               </p>
               <p>Started: February 2020</p>
               {/* <a href='#'>See More »</a> */}
             </div>
           </section>
 
-          <section>
-            <div
-              style={{
-                height: '150px',
-                width: '105px',
-                display: 'block',
-                margin: 'auto',
-                marginTop: '25px',
-                backgroundImage:
-                  'url(' + require('../../../img/logo_customers/pnp.png') + ')',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-              }}
-            />
-            <div className='section-content'>
-              <span
-                style={{
-                  color: 'var(--theme-red)',
-                  fontSize: '12px',
-                  fontWeight: '700',
-                }}
-              >
-                Ongoing Project
-              </span>
-              <span style={{ color: 'var(--gray-600)', fontSize: '12px' }}>
-                {moment().format(' • MMM DD YYYY')} • by admin
-              </span>
-
-              <h3 style={{ marginTop: '6px' }}>
-                End-User: Philippine National Police (PNP)
-              </h3>
-              <p>
-                Application: Delivery and Installation of 2 Units Digital
-                Trunked Radio System (DTRS)
-              </p>
-              <p>Started: June 2020</p>
-              {/* <a href='#'>See More »</a> */}
-            </div>
-          </section>
+         
         </div>
       </div>
     )

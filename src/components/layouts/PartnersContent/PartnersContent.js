@@ -50,7 +50,7 @@ export class PartnersContent extends Component {
           <div className='box-info reverse'>
             <div className='box-1 gs_reveal gs_reveal_fromRight'>
               <h2 style={{ textAlign: 'left' }}>About Motorola</h2>
-              <p>
+              <p style={{textAlign: 'justify'}}>
                 <b>Motorola Solutions</b> is a global leader in mission-critical
                 communications. Motorola technology platforms in communications,
                 command center software, video security solutions and managed
