@@ -17,7 +17,7 @@ export class IntroductionContent extends Component {
               <h1 className='gs_reveal'>Who We Are</h1>
             </div>
             <div className='spacer-1'></div>
-            <p className='gs_reveal gs_reveal_fromRight'>
+            <p className='gs_reveal gs_reveal_fromRight' style={{textAlign: 'justify'}}>
               <b>Railworks Corporation</b> expanded to Services specializing in
               Installation, Commissioning, Migration and Integration works.
               Target markets includes Public Safety Agency, Railway, Government
