@@ -49,8 +49,17 @@
       width: 100%;
 
       .box-content {
-        padding: 220px 30px 220px 0px;
-        width: 600px;
+        padding: 220px 30px 220px 30px;
+
+        @media only screen and (min-device-width: 1300px) and (max-device-width: 1920px) {
+          width: 600px;
+        }
+
+        @media only screen and (min-device-width: 1030px) and (max-device-width: 1299px) {
+          .add-space {
+            margin-right: 15px;
+          }
+        }
 
         .flex-content {
           @include flex-type(space-between);
@@ -61,27 +70,6 @@
             margin-top: 12px;
           }
         }
-
-        // FADE IN ANIMATION
-        // .flex-content {
-        //   opacity: 0;
-        //   animation-name: flex-content;
-        //   animation-duration: 3s;
-        //   animation-delay: 3s;
-        //   animation-fill-mode: forwards;
-
-        //   transition-property: transform;
-        //   transition-duration: 1s;
-        // }
-
-        // @keyframes flex-content {
-        //   0% {
-        //     opacity: 0;
-        //   }
-        //   100% {
-        //     opacity: 1;
-        //   }
-        // }
       }
 
       &.box-opacity {

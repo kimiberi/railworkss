@@ -82,7 +82,7 @@ export class HeaderContent extends Component {
 
           <div className='box-2'>
             <section className='phone'>
-              <img src={iconPhone} style={{ width: '30px', height: '30px' }} />
+              <img src={iconPhone} />
               <p>
                 <a href='tel:(02) 8280-2381'>(02) 8280-2381</a>
               </p>

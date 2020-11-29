@@ -15,15 +15,29 @@
     position: absolute;
     margin-top: -99px;
 
-    .box-content {
-      @include width(1200);
+    @media only screen and (min-device-width: 1300px) and (max-device-width: 1920px) {
+      .box-content {
+        @include width(1200);
+        outline: 1px solid green;
 
-      .box-info {
-        @include flex-type(space-evenly);
-        margin-top: 15px;
+        .box-info {
+          @include flex-type(space-evenly);
+          margin-top: 15px;
+        }
+        .box-info:first-child {
+          margin-top: 0px;
+        }
       }
-      .box-info:first-child {
-        margin-top: 0px;
+    }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 1299px) {
+      .box-content {
+        .box-info {
+          @include flex-type(space-evenly);
+          margin-top: 15px;
+        }
+        .box-info:first-child {
+          margin-top: 0px;
+        }
       }
     }
 

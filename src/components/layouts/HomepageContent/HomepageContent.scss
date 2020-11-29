@@ -2,24 +2,21 @@
 @import '../../../style/defaultStyle';
 
 .homepage-style {
-  // .partners-content {
-  //   background: var(--white);
-  //   padding: var(--padding-small);
-
-  //   .box-content {
-  //     @include flex-type(space-between);
-  //     @include width(1200);
-  //     align-items: center;
-  //   }
-  // }
-
   .customers-content {
     background: var(--theme-cream);
     padding: var(--padding-small);
 
-    .box-content {
-      @include flex-type(space-between);
-      @include width(1200);
+    @media only screen and (min-device-width: 1300px) and (max-device-width: 1920px) {
+      .box-content {
+        @include flex-type(space-between);
+        @include width(1200);
+      }
+    }
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 1299px) {
+      .box-content {
+        @include flex-type(space-between);
+      }
     }
   }
 }

@@ -16,7 +16,7 @@ export class WhatWeOfferContent extends Component {
 
               <div className='flex-content gs_reveal gs_reveal_fromLeft'>
                 <div className='content-1'>
-                  <div className='box-info'>
+                  <div className='box-info add-space'>
                     <img
                       src={iconArrow}
                       style={{
@@ -27,7 +27,7 @@ export class WhatWeOfferContent extends Component {
                     />
                     <p>Railway Products</p>
                   </div>
-                  <div className='box-info'>
+                  <div className='box-info add-space'>
                     <img
                       src={iconArrow}
                       style={{
@@ -38,7 +38,7 @@ export class WhatWeOfferContent extends Component {
                     />
                     <p>Broadband wireless access</p>
                   </div>
-                  <div className='box-info'>
+                  <div className='box-info add-space'>
                     <img
                       src={iconArrow}
                       style={{
@@ -49,7 +49,7 @@ export class WhatWeOfferContent extends Component {
                     />
                     <p>TETRA Train Radio Solution</p>
                   </div>
-                  <div className='box-info'>
+                  <div className='box-info add-space'>
                     <img
                       src={iconArrow}
                       style={{
@@ -60,7 +60,7 @@ export class WhatWeOfferContent extends Component {
                     />
                     <p>Body Worn Camera Solution</p>
                   </div>
-                  <div className='box-info'>
+                  <div className='box-info add-space'>
                     <img
                       src={iconArrow}
                       style={{

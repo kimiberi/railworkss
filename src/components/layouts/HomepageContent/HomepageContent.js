@@ -6,10 +6,6 @@ import WhatWeOfferContent from '../WhatWeOfferContent/WhatWeOfferContent'
 import PartnersContent from '../PartnersContent/PartnersContent'
 import ServicesContent from '../ServicesContent/ServicesContent'
 import ProjectsContent from '../ProjectsContent/ProjectsContent'
-// import logoHytera from '../../../img/logo_partners/hytera.png'
-// import logoMotorola from '../../../img/logo_partners/motorola.png'
-// import logoRadwin from '../../../img/logo_partners/radwin.png'
-// import logoHikVision from '../../../img/logo_partners/hikvision.png'
 import logoPNR from '../../../img/logo_customers/pnr.png'
 import logoLRT from '../../../img/logo_customers/lrt.png'
 import logoFireProtection from '../../../img/logo_customers/fireprotection.png'
@@ -26,24 +22,6 @@ export class HomepageContent extends Component {
         <PartnersContent />
         <ServicesContent />
         <ProjectsContent />
-
-        {/* <div className='partners-content'>
-          <h2>Our Partners</h2>
-          <div className='box-content'>
-            <a href='https://hytera.ph/' target='_blank'>
-              <img src={logoHytera} alt='Hytera' width='145' />
-            </a>
-            <a href='https://www.motorolasolutions.com/' target='_blank'>
-              <img src={logoMotorola} alt='Motorola' width='145' />
-            </a>
-            <a href='https://www.radwin.com/' target='_blank'>
-              <img src={logoRadwin} alt='Radwin' width='145' />
-            </a>
-            <a href='https://www.hikvision.com/' target='_blank'>
-              <img src={logoHikVision} alt='HikVision' width='145' />
-            </a>
-          </div>
-        </div> */}
 
         <div className='customers-content'>
           <h2>Our Customers</h2>

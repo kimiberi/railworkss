@@ -11,6 +11,10 @@ import iconFacebook from '../../../img/icons/facebookwht-circle.png'
 import iconInstagram from '../../../img/icons/instagramwht-circle.png'
 
 export class FooterContent extends Component {
+  constructor(props) {
+    super(props)
+  }
+
   render() {
     const activePage = this.props.activePage
 

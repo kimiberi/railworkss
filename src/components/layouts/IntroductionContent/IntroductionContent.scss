@@ -9,7 +9,10 @@
   margin-top: -1px; // connected in HeaderContent.js
 
   .box-content {
-    @include width(1200);
+    @media only screen and (min-device-width: 1300px) and (max-device-width: 1920px) {
+      @include width(1200);
+    }
+
     @include flex-type(space-between);
 
     .box-1 {

@@ -42,12 +42,9 @@ export class ProjectsContent extends Component {
               </span> */}
 
               <h3 style={{ marginTop: '6px' }}>
-                End-User: Philippine Drug Enforcement Agency
+                Philippine Drug Enforcement Agency
               </h3>
-              <p>
-                Supply, Delivery, and Testing of Communication
-                Equipment
-              </p>
+              <p>Supply, Delivery, and Testing of Communication Equipment</p>
               <p>Completed: July 2018</p>
               {/* <p>
                 <a href='#'>See More »</a>
@@ -81,11 +78,8 @@ export class ProjectsContent extends Component {
                 {moment().format(' • MMM DD YYYY')} • by admin
               </span> */}
 
-              <h3 style={{ marginTop: '6px' }}>End-User: Philippine Army</h3>
-              <p>
-                Supply and Delivery of Various UHF Commercial
-                Radios
-              </p>
+              <h3 style={{ marginTop: '6px' }}>Philippine Army</h3>
+              <p>Supply and Delivery of Various UHF Commercial Radios</p>
               <p>Completed: November 2019</p>
               {/* <a href='#'>See More »</a> */}
             </div>
@@ -118,17 +112,16 @@ export class ProjectsContent extends Component {
               </span> */}
 
               <h3 style={{ marginTop: '4px' }}>
-                End-User: Bureau of Fire Protection (BFP)
+                Bureau of Fire Protection (BFP)
               </h3>
               <p>
-                Supply, Delivery and Installation of Digital Radio System For BFP Region IV-A & Region II
+                Supply, Delivery and Installation of Digital Radio System For
+                BFP Region IV-A & Region II
               </p>
               <p>Completed: June 2019</p>
-              <p>
-                Supply and Delivery HF Radio for Bureau of Fire Protection
-              </p>
-              <p>Completed: July 2018</p>
-            
+              {/* <p>Supply and Delivery HF Radio for Bureau of Fire Protection</p>
+              <p>Completed: July 2018</p> */}
+
               {/* <a href='#'>See More »</a> */}
             </div>
           </section>
@@ -160,12 +153,9 @@ export class ProjectsContent extends Component {
               </span> */}
 
               <h3 style={{ marginTop: '6px' }}>
-                End-User: Light Rail Transit Authority (LRTA)
+                Light Rail Transit Authority (LRTA)
               </h3>
-              <p>
-                Restoration of Fiber Optic Cable Communication
-                Backbone
-              </p>
+              <p>Restoration of Fiber Optic Cable Communication Backbone</p>
               <p>Completed: February 2020</p>
               {/* <a href='#'>See More »</a> */}
             </div>
@@ -205,12 +195,11 @@ export class ProjectsContent extends Component {
               </span> */}
 
               <h3 style={{ marginTop: '6px' }}>
-                End-User: Light Rail Transit Authority (LRTA)
+                Light Rail Transit Authority (LRTA)
               </h3>
               <p>
-                Supply of Telephone Equipment and TETRA Base
-                Station Synchronization (TBS-SYN) and Tetra radio switch
-                upgrade.
+                Supply of Telephone Equipment and TETRA Base Station
+                Synchronization (TBS-SYN) and Tetra radio switch upgrade.
               </p>
 
               <p>Started: August 2020</p>
@@ -250,18 +239,17 @@ export class ProjectsContent extends Component {
               </span> */}
 
               <h3 style={{ marginTop: '6px' }}>
-                End-User: Philippine National Railways (PNR)
+                Philippine National Railways (PNR)
               </h3>
               <p>
-                Installation, Testing and Commissioning of 
-                Terrestial Trunk Radio (TETRA) System
+                Installation, Testing and Commissioning of Terrestial Trunk
+                Radio (TETRA) System
               </p>
 
               <p>Started: November 2019</p>
-                
+
               <p>
-                Supply, Delivery, and Installation of PNR HF Data
-                Communication
+                Supply, Delivery, and Installation of PNR HF Data Communication
               </p>
               <p>Started: January 2020</p>
 
@@ -301,18 +289,16 @@ export class ProjectsContent extends Component {
               </span> */}
 
               <h3 style={{ marginTop: '6px' }}>
-                End-User: Bureau of Fire Protection (BFP)
+                Bureau of Fire Protection (BFP)
               </h3>
               <p>
-                Supply, Delivery, Installation, Testing and Commissioning
-                of Digital Radio System for BFP Region X
+                Supply, Delivery, Installation, Testing and Commissioning of
+                Digital Radio System for BFP Region X
               </p>
               <p>Started: February 2020</p>
               {/* <a href='#'>See More »</a> */}
             </div>
           </section>
-
-         
         </div>
       </div>
     )
