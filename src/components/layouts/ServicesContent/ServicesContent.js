@@ -56,8 +56,8 @@ const BackgroundFlipCard_1 = styled.div({
 
   color: '#FFF',
   position: 'relative',
-  width: '320px',
-  height: '230px',
+  width: '100%',
+  height: '100%',
   textAlign: 'center',
   // cursor: 'pointer',
   backgroundImage:
@@ -76,7 +76,12 @@ const BackgroundFlipCard_1 = styled.div({
 
 function FlipCard_1() {
   return (
-    <div style={{ marginRight: '20px' }}>
+    <div
+      style={{
+        marginRight: '20px',
+      }}
+      className='img-size'
+    >
       <BackgroundFlipCard_1>
         <DisplayOver>
           {/* <BigTitle></BigTitle> */}
@@ -100,8 +105,8 @@ const BackgroundFlipCard_2 = styled.div({
   backgroundPosition: 'center',
   color: '#FFF',
   position: 'relative',
-  width: '320px',
-  height: '230px',
+  width: '100%',
+  height: '100%',
   textAlign: 'center',
   // cursor: 'pointer',
   backgroundImage:
@@ -120,7 +125,7 @@ const BackgroundFlipCard_2 = styled.div({
 
 function FlipCard_2() {
   return (
-    <div style={{ marginRight: '20px' }}>
+    <div style={{ marginRight: '20px' }} className='img-size'>
       <BackgroundFlipCard_2>
         <DisplayOver>
           {/* <BigTitle></BigTitle> */}
@@ -143,8 +148,8 @@ const BackgroundFlipCard_3 = styled.div({
   backgroundRepeat: 'no-repeat',
   color: '#FFF',
   position: 'relative',
-  width: '320px',
-  height: '230px',
+  width: '100%',
+  height: '100%',
   textAlign: 'center',
   // cursor: 'pointer',
   backgroundImage:
@@ -163,7 +168,7 @@ const BackgroundFlipCard_3 = styled.div({
 
 function FlipCard_3() {
   return (
-    <div>
+    <div className='img-size'>
       <BackgroundFlipCard_3>
         <DisplayOver>
           {/* <BigTitle></BigTitle> */}
@@ -185,11 +190,12 @@ const BackgroundFlipCard_4 = styled.div({
   backgroundRepeat: 'no-repeat',
   color: '#FFF',
   position: 'relative',
-  width: '320px',
-  height: '230px',
+  width: '100%',
+  height: '100%',
   textAlign: 'center',
   // cursor: 'pointer',
-  backgroundImage: 'url(' + require('../../../img/our_services/project_img_4.jpg') + ')',
+  backgroundImage:
+    'url(' + require('../../../img/our_services/project_img_4.jpg') + ')',
 
   [`:hover ${DisplayOver}`]: {
     backgroundColor: 'rgba(0,0,0,.9)',
@@ -204,15 +210,15 @@ const BackgroundFlipCard_4 = styled.div({
 
 function FlipCard_4() {
   return (
-    <div style={{ marginRight: '20px' }}>
+    <div style={{ marginRight: '20px' }} className='img-size'>
       <BackgroundFlipCard_4>
         <DisplayOver>
           {/* <BigTitle></BigTitle> */}
           <Hover>
             {/* <SubTitle></SubTitle> */}
             <Paragraph>
-              Installation and Commissioning of Digital Radio System
-              (DMR Conventional, DMR Trunking and TETRA System)
+              Installation and Commissioning of Digital Radio System (DMR
+              Conventional, DMR Trunking and TETRA System)
             </Paragraph>
             {/* <CTA>View More +</CTA> */}
           </Hover>
@@ -227,8 +233,8 @@ const BackgroundFlipCard_5 = styled.div({
   backgroundRepeat: 'no-repeat',
   color: '#FFF',
   position: 'relative',
-  width: '320px',
-  height: '230px',
+  width: '100%',
+  height: '100%',
   textAlign: 'center',
   // cursor: 'pointer',
   backgroundImage:
@@ -247,7 +253,7 @@ const BackgroundFlipCard_5 = styled.div({
 
 function FlipCard_5() {
   return (
-    <div style={{ marginRight: '20px' }}>
+    <div style={{ marginRight: '20px' }} className='img-size'>
       <BackgroundFlipCard_5>
         <DisplayOver>
           {/* <BigTitle></BigTitle> */}
@@ -271,8 +277,8 @@ const BackgroundFlipCard_6 = styled.div({
   backgroundPosition: 'bottom',
   color: '#FFF',
   position: 'relative',
-  width: '320px',
-  height: '230px',
+  width: '100%',
+  height: '100%',
   textAlign: 'center',
   // cursor: 'pointer',
   backgroundImage:
@@ -291,14 +297,15 @@ const BackgroundFlipCard_6 = styled.div({
 
 function FlipCard_6() {
   return (
-    <div>
+    <div className='img-size'>
       <BackgroundFlipCard_6>
         <DisplayOver>
           {/* <BigTitle></BigTitle> */}
           <Hover>
             {/* <SubTitle></SubTitle> */}
             <Paragraph>
-              Structural Design Engineering and Construction Services (with PCAB License).
+              Structural Design Engineering and Construction Services (with PCAB
+              License).
             </Paragraph>
             {/* <CTA>View More +</CTA> */}
           </Hover>

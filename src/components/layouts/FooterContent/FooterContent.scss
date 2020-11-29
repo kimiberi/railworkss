@@ -7,14 +7,29 @@
   font-size: 14px;
 
   .box-content {
-    @include width(900);
+    @media only screen and (min-device-width: 978px) and (max-device-width: 1920px) {
+      @include width(900);
+
+      .nav {
+        width: 70%;
+      }
+    }
+    @media only screen and (min-device-width: 845px) and (max-device-width: 977px) {
+      .nav {
+        width: 80%;
+      }
+    }
+    @media only screen and (min-device-width: 690px) and (max-device-width: 844px) {
+      .nav {
+        width: 100%;
+      }
+    }
 
     a:hover {
       color: var(--white);
     }
 
     .nav {
-      width: 70%;
       margin: auto;
 
       ul {
@@ -42,10 +57,6 @@
         background: var(--theme-red);
         transition: all 0.3s;
       }
-      // ul li a.active {
-      //   border-bottom: 3px solid var(--theme-red);
-      //   padding-bottom: 5px;
-      // }
     }
     .borderXwidth a:before,
     .borderXwidth a:after {
