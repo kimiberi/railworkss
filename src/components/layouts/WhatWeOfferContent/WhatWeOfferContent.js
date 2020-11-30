@@ -15,8 +15,8 @@ export class WhatWeOfferContent extends Component {
               <h2 className='gs_reveal'>What We Offer</h2>
 
               <div className='flex-content gs_reveal gs_reveal_fromLeft'>
-                <div className='content-1'>
-                  <div className='box-info add-space'>
+                <div className='content-1 add-space'>
+                  <div className='box-info'>
                     <img
                       src={iconArrow}
                       style={{
@@ -25,51 +25,19 @@ export class WhatWeOfferContent extends Component {
                         marginRight: '15px',
                       }}
                     />
-                    <p>Railway Products</p>
+                    <p>Railway Solutions:</p>
                   </div>
-                  <div className='box-info add-space'>
-                    <img
-                      src={iconArrow}
-                      style={{
-                        width: '12px',
-                        height: '12px',
-                        marginRight: '15px',
-                      }}
-                    />
-                    <p>Broadband wireless access</p>
-                  </div>
-                  <div className='box-info add-space'>
-                    <img
-                      src={iconArrow}
-                      style={{
-                        width: '12px',
-                        height: '12px',
-                        marginRight: '15px',
-                      }}
-                    />
-                    <p>TETRA Train Radio Solution</p>
-                  </div>
-                  <div className='box-info add-space'>
-                    <img
-                      src={iconArrow}
-                      style={{
-                        width: '12px',
-                        height: '12px',
-                        marginRight: '15px',
-                      }}
-                    />
-                    <p>Body Worn Camera Solution</p>
-                  </div>
-                  <div className='box-info add-space'>
-                    <img
-                      src={iconArrow}
-                      style={{
-                        width: '12px',
-                        height: '12px',
-                        marginRight: '15px',
-                      }}
-                    />
-                    <p>PT-Mast Fabrication</p>
+                  <div>
+                    <ul style={{ marginLeft: '60px' }}>
+                      <li>Tetra Railway System</li>
+                      <li>Signaling System</li>
+                      <li>Track Works</li>
+                      <li>SCADA</li>
+                      <li>Road Rail Vehicles</li>
+                      <li>Train Simulators</li>
+                      <li>Operations Control Center</li>
+                      <li>Level Crossing Solutions</li>
+                    </ul>
                   </div>
                 </div>
 
@@ -83,7 +51,7 @@ export class WhatWeOfferContent extends Component {
                         marginRight: '15px',
                       }}
                     />
-                    <p>Intelligent CCTV and IOT Solution</p>
+                    <p>Broadband Wireless Access</p>
                   </div>
                   <div className='box-info'>
                     <img
@@ -94,7 +62,7 @@ export class WhatWeOfferContent extends Component {
                         marginRight: '15px',
                       }}
                     />
-                    <p>Conventional and Trunking Two-way Radio Solutions</p>
+                    <p>BodyWorn Camera Solution</p>
                   </div>
                   <div className='box-info'>
                     <img
@@ -105,7 +73,7 @@ export class WhatWeOfferContent extends Component {
                         marginRight: '15px',
                       }}
                     />
-                    <p>Two-way Radio Equipment and Accessories</p>
+                    <p>Conventional and trucnking Two-way Radio</p>
                   </div>
                   <div className='box-info'>
                     <img
@@ -116,7 +84,18 @@ export class WhatWeOfferContent extends Component {
                         marginRight: '15px',
                       }}
                     />
-                    <p>Rapid Deployable Emergency Communication Solution</p>
+                    <p>Rapid Deployable Emergency Communication</p>
+                  </div>
+                  <div className='box-info'>
+                    <img
+                      src={iconArrow}
+                      style={{
+                        width: '12px',
+                        height: '12px',
+                        marginRight: '15px',
+                      }}
+                    />
+                    <p>PT-Mast Fabrication</p>
                   </div>
                   <div className='box-info'>
                     <img
