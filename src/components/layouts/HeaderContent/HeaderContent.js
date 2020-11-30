@@ -11,6 +11,7 @@ import iconEmail from '../../../img/icons/favicon_whtemail.png'
 import keyVisualPublicTransit from '../../../img/backgrounds/publictransit.jpeg'
 import keyVisualRadioTower from '../../../img/backgrounds/galaxy_radiotower.jpg'
 import keyVisualRadioSignal from '../../../img/backgrounds/radiocommunication.jpg'
+import { useMediaQuery } from 'react-responsive'
 
 // install npm install react-spring
 
@@ -29,7 +30,7 @@ const slides = [
   },
 ]
 
-const App = () => {
+const BackgroundSlider = () => {
   const [index, set] = useState(0)
   const transitions = useTransition(slides[index], (item) => item.id, {
     from: { opacity: 0 },
@@ -55,41 +56,101 @@ const App = () => {
   ))
 }
 
-export class HeaderContent extends Component {
-  render() {
-    return (
-      <div className='header-style background-opacity'>
-        <div className='contact-info'>
-          <div className='box-1'>
-            <section className='location'>
-              <img src={iconLocation} width='18' height='18' />
-              <p>
-                <a
-                  href='https://www.google.com/maps/place/Railworks+Corporation/@14.5202409,121.0343059,17z/data=!3m1!4b1!4m5!3m4!1s0x3397c923a36a5983:0xf6401fbedfe87a9e!8m2!3d14.5202357!4d121.0364946'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  101 E. Aguinaldo Ave. AFPOVAI Phase I Western Bicutan, Taguig
-                  City 1630 Philippines
-                </a>
-              </p>
-            </section>
-            <section className='email'>
-              <img src={iconEmail} style={{ width: '18px', height: '18px' }} />
-              <a href='mailto:info@railworksph.com'>info@railworksph.com</a>
-            </section>
-          </div>
+// RESPONSIVE PLATFORM TABLETVIEW
+const SmallHeader = () => {
+  const isDesktop = useMediaQuery({
+    query: '(min-device-width: 1030px)',
+  })
+  const isTablet = useMediaQuery({
+    query: '(max-device-width: 1029px)',
+  })
 
-          <div className='box-2'>
-            <section className='phone'>
-              <img src={iconPhone} />
-              <p>
-                <a href='tel:(02) 8280-2381'>(02) 8280-2381</a>
-              </p>
-            </section>
-          </div>
-        </div>
+  return (
+    <>
+      {isDesktop && (
+        <>
+          <div className='contact-info'>
+            <div className='box-1'>
+              <section className='location'>
+                <img src={iconLocation} width='18' height='18' />
+                <p>
+                  <a
+                    href='https://www.google.com/maps/place/Railworks+Corporation/@14.5202409,121.0343059,17z/data=!3m1!4b1!4m5!3m4!1s0x3397c923a36a5983:0xf6401fbedfe87a9e!8m2!3d14.5202357!4d121.0364946'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    101 E. Aguinaldo Ave. AFPOVAI Phase I Western Bicutan,
+                    Taguig City 1630 Philippines
+                  </a>
+                </p>
+              </section>
+              <section className='email'>
+                <img
+                  src={iconEmail}
+                  style={{ width: '18px', height: '18px' }}
+                />
+                <a href='mailto:info@railworksph.com'>info@railworksph.com</a>
+              </section>
+            </div>
 
+            <div className='box-2'>
+              <section className='phone'>
+                <img src={iconPhone} />
+                <p>
+                  <a href='tel:(02) 8280-2381'>(02) 8280-2381</a>
+                </p>
+              </section>
+            </div>
+          </div>
+        </>
+      )}
+
+      {isTablet && (
+        <>
+          <div className='contact-info'>
+            <div className='box-1'>
+              <section className='location'>
+                <img src={iconLocation} width='18' height='18' />
+                <p>
+                  <a
+                    href='https://www.google.com/maps/place/Railworks+Corporation/@14.5202409,121.0343059,17z/data=!3m1!4b1!4m5!3m4!1s0x3397c923a36a5983:0xf6401fbedfe87a9e!8m2!3d14.5202357!4d121.0364946'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    101 E. Aguinaldo Ave. AFPOVAI Phase I Western Bicutan,
+                    Taguig City 1630 Philippines
+                  </a>
+                </p>
+              </section>
+              <section className='email'>
+                <img
+                  src={iconEmail}
+                  style={{ width: '18px', height: '18px' }}
+                />
+                <a href='mailto:info@railworksph.com'>info@railworksph.com</a>
+              </section>
+            </div>
+
+            <div></div>
+          </div>
+        </>
+      )}
+    </>
+  )
+}
+
+// RESPONSIVE PLATFORM TABLETVIEW
+const MainHeader = () => {
+  const isDesktop = useMediaQuery({
+    query: '(min-device-width: 1030px)',
+  })
+  const isTablet = useMediaQuery({
+    query: '(max-device-width: 1029px)',
+  })
+
+  return (
+    <>
+      {isDesktop && (
         <div className='navheader header-opacity'>
           <section className='business-logo'>
             <a href='/'>
@@ -170,6 +231,40 @@ export class HeaderContent extends Component {
             </ul>
           </section>
         </div>
+      )}
+
+      {isTablet && (
+        <div className='navheader header-opacity'>
+          <section className='business-logo'>
+            <a href='/'>
+              <img
+                src={logoRailworks}
+                alt='Railworks Incorporated'
+                width='150'
+                className='railworks-logo'
+              />
+            </a>
+          </section>
+          <div className='box-2 pullRight'>
+            <section className='phone'>
+              <img src={iconPhone} />
+              <p>
+                <a href='tel:(02) 8280-2381'>(02) 8280-2381</a>
+              </p>
+            </section>
+          </div>
+        </div>
+      )}
+    </>
+  )
+}
+
+export class HeaderContent extends Component {
+  render() {
+    return (
+      <div className='header-style background-opacity'>
+        <SmallHeader />
+        <MainHeader />
 
         <div className='box-content'>
           <p className='slogan gs_reveal gs_reveal_fromLeft'>
@@ -181,7 +276,7 @@ export class HeaderContent extends Component {
         </div>
 
         <div className='down-pattern'></div>
-        <App />
+        <BackgroundSlider />
       </div>
     )
   }

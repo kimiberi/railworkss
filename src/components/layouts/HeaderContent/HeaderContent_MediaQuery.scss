@@ -1,0 +1,100 @@
+// imports
+@import '../../../style/defaultStyle';
+
+.header-style {
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1029px) {
+    .contact-info {
+      @include flex-type(space-between);
+      height: 50px;
+      background: var(--gray-901);
+      color: var(--white);
+      font-size: 12px;
+      position: relative;
+      z-index: 1;
+
+      img {
+        margin-right: 14px;
+      }
+      p,
+      a {
+        font-family: var(--fontfam-Roboto);
+        letter-spacing: 1px;
+        color: var(--white);
+      }
+      a:hover {
+        color: var(--white);
+      }
+
+      .box-1 {
+        @include flex-type(row);
+        align-items: center;
+        padding: 0px 30px 0px 30px;
+        outline: 1px solid green;
+      }
+
+      .box-2 {
+        clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+        @include flex-type(column);
+        justify-content: center;
+        align-items: center;
+        background: var(--theme-red);
+        padding: 0px 30px 0px 90px;
+      }
+
+      .box-2 a {
+        font-size: 24px;
+        font-weight: 900;
+      }
+
+      .box-2 img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .location,
+      .email {
+        @include flex-type(row);
+        align-items: center;
+        margin-right: 42px;
+      }
+      .box-2 .phone {
+        @include flex-type(row);
+        align-items: center;
+      }
+
+      @media only screen and (min-device-width: 1030px) and (max-device-width: 1299px) {
+        .box-1 {
+          @include flex-type(row);
+          align-items: center;
+          padding: 0px 15px 0px 15px;
+        }
+
+        .box-2 {
+          clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+          @include flex-type(column);
+          justify-content: center;
+          align-items: center;
+          background: var(--theme-red);
+          padding: 0px 15px 0px 40px;
+        }
+
+        .box-2 a {
+          font-size: 18px;
+          font-weight: 900;
+        }
+
+        .box-2 img {
+          width: 20px;
+          height: 20px;
+        }
+
+        .location,
+        .email {
+          @include flex-type(row);
+          align-items: center;
+          margin-right: 14px;
+        }
+      }
+    }
+  }
+}
