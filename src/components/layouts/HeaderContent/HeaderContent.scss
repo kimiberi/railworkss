@@ -20,218 +20,6 @@
     background-repeat: no-repeat;
   }
 
-  .contact-info {
-    @include flex-type(space-between);
-    height: 50px;
-    background: var(--gray-901);
-    color: var(--white);
-    font-size: 12px;
-    position: relative;
-    z-index: 1;
-
-    img {
-      margin-right: 14px;
-    }
-    p,
-    a {
-      font-family: var(--fontfam-Roboto);
-      letter-spacing: 1px;
-      color: var(--white);
-    }
-    a:hover {
-      color: var(--white);
-    }
-
-    .box-1 {
-      @include flex-type(row);
-      align-items: center;
-      padding: 0px 30px 0px 30px;
-    }
-
-    .box-2 {
-      clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
-      @include flex-type(column);
-      justify-content: center;
-      align-items: center;
-      background: var(--theme-red);
-      padding: 0px 30px 0px 90px;
-    }
-
-    .box-2 a {
-      font-size: 24px;
-      font-weight: 900;
-    }
-
-    .box-2 img {
-      width: 30px;
-      height: 30px;
-    }
-
-    .location,
-    .email {
-      @include flex-type(row);
-      align-items: center;
-      margin-right: 42px;
-    }
-    .box-2 .phone {
-      @include flex-type(row);
-      align-items: center;
-    }
-
-    @media only screen and (min-device-width: 1030px) and (max-device-width: 1299px) {
-      .box-1 {
-        @include flex-type(row);
-        align-items: center;
-        padding: 0px 15px 0px 15px;
-      }
-
-      .box-2 {
-        clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
-        @include flex-type(column);
-        justify-content: center;
-        align-items: center;
-        background: var(--theme-red);
-        padding: 0px 15px 0px 40px;
-      }
-
-      .box-2 a {
-        font-size: 18px;
-        font-weight: 900;
-      }
-
-      .box-2 img {
-        width: 20px;
-        height: 20px;
-      }
-
-      .location,
-      .email {
-        @include flex-type(row);
-        align-items: center;
-        margin-right: 14px;
-      }
-    }
-  }
-
-  .navheader {
-    @include flex-type(space-between);
-    padding: 30px;
-    box-shadow: 0px 21px 10px -15px var(--gray-901);
-
-    .business-logo {
-      width: 30%;
-    }
-
-    @media only screen and (min-device-width: 500px) and (max-device-width: 1029px) {
-      @include flex-type(row);
-      align-items: center;
-
-      .box-2 a {
-        font-size: 28px;
-        font-weight: 900;
-        font-family: var(--fontfam-Roboto);
-      }
-
-      .box-2 img {
-        width: 30px;
-        height: 30px;
-        margin-right: 15px;
-      }
-      .box-2 .phone {
-        @include flex-type(row);
-        align-items: center;
-      }
-    }
-
-    .nav {
-      width: 100%;
-      @include flex-type(column);
-      justify-content: center;
-
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        @include flex-type(row);
-        justify-content: flex-end;
-        letter-spacing: 2px;
-        width: auto;
-        // margin: auto;
-      }
-      ul li a {
-        font-family: var(--fontfam-Raleway);
-        text-decoration: none;
-        cursor: pointer;
-        color: var(--white);
-        text-transform: uppercase;
-        font-size: 14px;
-        margin: 0px 10px;
-        padding: 10px 10px;
-      }
-
-      ul li a.active:before {
-        position: absolute;
-        background: #fff;
-        opacity: 0.3;
-        transition: all 0.3s;
-      }
-
-      &.pullRight a:before {
-        position: absolute;
-        width: 2px;
-        height: 100%;
-        left: 0px;
-        top: 0px;
-        content: '';
-        background: #fff;
-        opacity: 0.3;
-        transition: all 0.3s;
-      }
-      &.pullRight a:hover:before,
-      ul li a.active:before {
-        width: 100%;
-      }
-    }
-
-    &.header-opacity {
-      position: relative;
-      overflow: hidden;
-      // background-color: var(--black);  // USE THIS AS CHOSEN COLOR FOR BG IMAGE
-      z-index: 2;
-    }
-    &.header-opacity:before {
-      content: ' ';
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      opacity: 0.6;
-      object-fit: cover;
-      // background-image: url('../../../img/backgrounds/subway.jpeg');
-      background: var(--black);
-      background-position: 50% 0;
-      -ms-background-size: cover;
-      -o-background-size: cover;
-      -moz-background-size: cover;
-      -webkit-background-size: cover;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-    &.header-opacity img,
-    ul,
-    li,
-    a,
-    p {
-      z-index: 3;
-      position: relative;
-      color: var(--white);
-      text-align: center;
-    }
-  }
-
   .down-pattern {
     clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
     height: 100px;
@@ -242,7 +30,9 @@
   }
 
   .box-content {
-    @include width(1200);
+    // @media only screen and (min-device-width: 1030px) and (max-device-width: 1920px) {
+    //   @include width(1200); // MUST NEED TO HIDE THIS AS IT AFFECT THE STICKY
+    // }
     padding: 220px 30px 220px 30px;
     position: relative;
     z-index: 5;
@@ -274,11 +64,11 @@
     }
   }
 
-  &.background-opacity {
-    position: relative;
-    overflow: hidden;
-    z-index: 2;
-  }
+  // &.background-opacity {
+  //   position: relative;
+  //   overflow: hidden;
+  //   z-index: 2;
+  // }
   &.background-opacity:before {
     content: ' ';
     display: block;
@@ -286,7 +76,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 850px; // DAPAT height: 100% YAN EE KASO AYON
     z-index: 1;
     opacity: 0.6;
     object-fit: cover;

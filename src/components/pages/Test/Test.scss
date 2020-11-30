@@ -3,5 +3,8 @@
 
 .test-style {
   background: pink;
-  padding: var(--padding-big);
+  padding: var(--padding-xs);
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }

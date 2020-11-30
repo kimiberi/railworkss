@@ -1,0 +1,126 @@
+// imports
+@import '../../style/defaultStyle';
+
+.nav-root {
+  width: 100%;
+  @include flex-type(column);
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    @include flex-type(column);
+    justify-content: flex-end;
+    letter-spacing: 2px;
+    width: auto;
+    // margin: auto;
+  }
+
+  ul li a {
+    font-family: var(--fontfam-Raleway);
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0px 10px;
+    padding: 10px 10px;
+  }
+}
+// .nav {
+//   width: 100%;
+//   @include flex-type(column);
+//   justify-content: center;
+
+//   ul {
+//     list-style-type: none;
+//     margin: 0;
+//     padding: 0;
+//     @include flex-type(row);
+//     justify-content: flex-end;
+//     letter-spacing: 2px;
+//     width: auto;
+//     // margin: auto;
+//   }
+//   ul li a {
+//     font-family: var(--fontfam-Raleway);
+//     text-decoration: none;
+//     cursor: pointer;
+//     color: var(--white);
+//     text-transform: uppercase;
+//     font-size: 14px;
+//     margin: 0px 10px;
+//     padding: 10px 10px;
+//   }
+
+//   ul li a.active:before {
+//     position: absolute;
+//     background: #fff;
+//     opacity: 0.3;
+//     transition: all 0.3s;
+//   }
+
+//   &.pullRight a:before {
+//     position: absolute;
+//     width: 2px;
+//     height: 100%;
+//     left: 0px;
+//     top: 0px;
+//     content: '';
+//     background: #fff;
+//     opacity: 0.3;
+//     transition: all 0.3s;
+//   }
+//   &.pullRight a:hover:before,
+//   ul li a.active:before {
+//     width: 100%;
+//   }
+// }
+
+/* READ THIS!!! THE REST COPIED DIRECTLY FROM REACT-BURGER-MENU DOCS */
+
+/* OUTSIDE BUTTON: POSITION AND SIZING OF BURGER BUTTON */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 20px;
+  left: 36px;
+  top: 105px;
+}
+
+/* OUTSIDE BUTTON: COLOR/SHAPE OF BURGER ICON BARS */
+.bm-burger-bars {
+  background: var(--gray-600);
+}
+
+/* POSITION AND SIZING OF CLICKABLE CROSS BUTTON */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* COLOR/SHAPE OF CLOSE BUTTON CROSS */
+.bm-cross {
+  background: var(--white);
+}
+
+/* SIDEBAR STYLES */
+.bm-menu {
+  background: var(--gray-902);
+  padding: 60px 30px 60px 30px;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* WRAPPER FOR ITEM LIST */
+.bm-item-list {
+  color: #161616;
+}
+
+/* OVERLAY YOU SEE UPON SHOWING THE SIDEBAR */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
