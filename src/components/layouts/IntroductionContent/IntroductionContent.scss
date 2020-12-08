@@ -12,8 +12,9 @@
     @media only screen and (min-device-width: 1300px) and (max-device-width: 1920px) {
       @include width(1200);
     }
-
-    @include flex-type(space-between);
+    @media only screen and (min-device-width: 769px) and (max-device-width: 1920px) {
+      @include flex-type(space-between);
+    }
 
     .box-1 {
       margin-right: 42px;
@@ -22,11 +23,18 @@
       &.animation-effect {
         overflow: hidden;
         box-shadow: 21px 21px #f24a4a;
-        height: 350px; // need to be match on img height
+        @media only screen and (min-device-width: 769px) and (max-device-width: 1920px) {
+          height: 350px; // need to be match on img height
+        }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+          height: 450px; // need to be match on img height
+        }
       }
       &.animation-effect img {
         transition: all 0.3s ease-out;
-        height: 350px; // need to be match on animation effect height
+        @media only screen and (min-device-width: 769px) and (max-device-width: 1920px) {
+          height: 350px; // need to be match on animation effect height
+        }
       }
       &.animation-effect img:hover {
         transform: scale(1.2, 1.2);
@@ -34,8 +42,13 @@
     }
 
     .box-2 {
-      margin-left: 42px;
-      width: 160%;
+      @media only screen and (min-device-width: 769px) and (max-device-width: 1920px) {
+        margin-left: 42px;
+        width: 160%;
+      }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+        margin-top: 30px;
+      }
     }
 
     h2 {

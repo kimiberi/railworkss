@@ -10,7 +10,10 @@
   }
 
   .box-content {
-    @include flex-type(space-between);
+    @media only screen and (min-device-width: 769px) and (max-device-width: 1920px) {
+      @include flex-type(space-between);
+    }
+
     @media only screen and (min-device-width: 1300px) and (max-device-width: 1920px) {
       @include width(1200);
     }
@@ -19,17 +22,23 @@
         height: 520px;
       }
     }
-    @media only screen and (min-device-width: 768px) and (max-device-width: 830px) {
+    @media only screen and (min-device-width: 769px) and (max-device-width: 830px) {
       section {
         height: 550px;
       }
     }
 
     section {
-      width: 300px;
       box-shadow: 5px 5px 10px var(--gray-500);
       font-size: 14px;
-      margin-right: 20px;
+
+      @media only screen and (min-device-width: 769px) and (max-device-width: 1920px) {
+        width: 300px;
+        margin-right: 20px;
+      }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+        margin-top: 30px;
+      }
 
       .section-content {
         background: var(--white);

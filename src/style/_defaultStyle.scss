@@ -5,6 +5,9 @@
   } @else if $val == row-reverse {
     display: flex;
     flex-direction: row-reverse;
+  } @else if $val == column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
   } @else if $val == column {
     display: flex;
     flex-direction: column;

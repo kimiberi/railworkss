@@ -73,7 +73,7 @@ export class WhatWeOfferContent extends Component {
                         marginRight: '15px',
                       }}
                     />
-                    <p>Conventional and trucnking Two-way Radio</p>
+                    <p>Conventional and trunking Two-way Radio</p>
                   </div>
                   <div className='box-info'>
                     <img

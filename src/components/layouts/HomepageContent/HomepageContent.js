@@ -25,6 +25,7 @@ export class HomepageContent extends Component {
 
         <div className='customers-content'>
           <h2>Our Customers</h2>
+          <div className='spacer-1' />
           <div className='box-content gs_reveal'>
             <a
               href='https://www.pnr.gov.ph/'
@@ -32,9 +33,9 @@ export class HomepageContent extends Component {
               rel='noopener noreferrer'
             >
               <img
+                className='img-size'
                 src={logoPNR}
                 alt='Philippine National Railway'
-                width='100'
               />
             </a>
             <a
@@ -43,9 +44,9 @@ export class HomepageContent extends Component {
               rel='noopener noreferrer'
             >
               <img
+                className='img-size'
                 src={logoLRT}
                 alt='Light Rail Transit Authority'
-                width='110'
               />
             </a>
             <a
@@ -54,9 +55,9 @@ export class HomepageContent extends Component {
               rel='noopener noreferrer'
             >
               <img
+                className='img-size'
                 src={logoFireProtection}
                 alt='Bureau of Fire Protection'
-                width='100'
               />
             </a>
             <a
@@ -65,9 +66,9 @@ export class HomepageContent extends Component {
               rel='noopener noreferrer'
             >
               <img
+                className='img-size'
                 src={logoKatihan}
                 alt='Hukbong Katihan ng Pilipinas'
-                width='100'
               />
             </a>
             <a
@@ -75,7 +76,11 @@ export class HomepageContent extends Component {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img src={logoPNP} alt='Philippine National Police' width='70' />
+              <img
+                className='img-size-pnp'
+                src={logoPNP}
+                alt='Philippine National Police'
+              />
             </a>
             <a
               href='https://pdea.gov.ph/'
@@ -83,9 +88,9 @@ export class HomepageContent extends Component {
               rel='noopener noreferrer'
             >
               <img
+                className='img-size'
                 src={logoPDEA}
                 alt='Philippine Drug Enforcement Agency'
-                width='100'
               />
             </a>
           </div>

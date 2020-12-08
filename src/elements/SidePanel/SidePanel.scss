@@ -85,7 +85,12 @@
   width: 36px;
   height: 20px;
   left: 36px;
-  top: 105px;
+  @media only screen and (min-device-width: 641px) and (max-device-width: 1920px) {
+    top: 105px;
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+    top: 50px;
+  }
 }
 
 /* OUTSIDE BUTTON: COLOR/SHAPE OF BURGER ICON BARS */

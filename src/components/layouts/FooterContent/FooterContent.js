@@ -100,7 +100,7 @@ export class FooterContent extends Component {
           <div className='contact-information'>
             <section className='location'>
               <img src={iconLocation} width='18' height='18' />
-              <p>
+              <p className='text-left'>
                 <a
                   href='https://www.google.com/maps/place/Railworks+Corporation/@14.5202409,121.0343059,17z/data=!3m1!4b1!4m5!3m4!1s0x3397c923a36a5983:0xf6401fbedfe87a9e!8m2!3d14.5202357!4d121.0364946'
                   target='_blank'

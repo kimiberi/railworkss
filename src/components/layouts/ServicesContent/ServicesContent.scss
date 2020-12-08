@@ -20,10 +20,12 @@
       height: 230px;
     }
 
-    @media only screen and (min-device-width: 1300px) and (max-device-width: 1920px) {
-      .box-content {
+    .box-content {
+      @media only screen and (min-device-width: 1300px) and (max-device-width: 1920px) {
         @include width(1200);
+      }
 
+      @media only screen and (min-device-width: 769px) and (max-device-width: 1920px) {
         .box-info {
           @include flex-type(space-evenly);
           margin-top: 15px;
@@ -32,28 +34,29 @@
           margin-top: 0px;
         }
       }
-    }
-    @media only screen and (min-device-width: 1030px) and (max-device-width: 1299px) {
-      .box-content {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
         .box-info {
-          @include flex-type(space-evenly);
-          margin-top: 15px;
-        }
-        .box-info:first-child {
-          margin-top: 0px;
-        }
-      }
-    }
-    @media only screen and (min-device-width: 690px) and (max-device-width: 1029px) {
-      .box-content {
-        .box-info {
-          @include flex-type(space-evenly);
+          @include flex-type(column);
           margin-top: 15px;
         }
         .box-info:first-child {
           margin-top: 0px;
         }
 
+        .img-size {
+          margin-top: 15px;
+          width: 100%;
+          background-position: center;
+          @media only screen and (min-device-width: 561px) and (max-device-width: 768px) {
+            height: 400px;
+          }
+        }
+        .img-size:first-child {
+          margin-top: 0px;
+        }
+      }
+
+      @media only screen and (min-device-width: 769px) and (max-device-width: 1029px) {
         .img-size {
           width: 245px;
           height: 165px;

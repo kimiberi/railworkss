@@ -41,7 +41,11 @@ export class PartnersContent extends Component {
               <a href='https://hytera.ph/' target='_blank'>
                 <img src={imgHytera} alt='Personal Computer' width='300' />
               </a>
-              <div className='spacer-3'></div>
+
+              {/* <MediaQuery minDeviceWidth={768}>
+                <div className='spacer-3'></div>
+              </MediaQuery> */}
+              {/* <div className='spacer-3'></div> */}
             </div>
           </div>
 
@@ -50,7 +54,7 @@ export class PartnersContent extends Component {
           <div className='box-info reverse'>
             <div className='box-1 gs_reveal gs_reveal_fromRight'>
               <h2 style={{ textAlign: 'left' }}>About Motorola</h2>
-              <p style={{textAlign: 'justify'}}>
+              <p style={{ textAlign: 'justify' }}>
                 <b>Motorola Solutions</b> is a global leader in mission-critical
                 communications. Motorola technology platforms in communications,
                 command center software, video security solutions and managed
@@ -72,7 +76,7 @@ export class PartnersContent extends Component {
                   width='300'
                 />
               </a>
-              <div className='spacer-3'></div>
+              {/* <div className='spacer-3'></div> */}
             </div>
           </div>
 
@@ -99,14 +103,14 @@ export class PartnersContent extends Component {
               <a href='https://www.radwin.com/' target='_blank'>
                 <img src={imgRadwin} alt='Private Networks' width='300' />
               </a>
-              <div className='spacer-3'></div>
+              {/* <div className='spacer-3'></div> */}
             </div>
           </div>
 
           <div className='spacer-4'></div>
 
           <div className='box-info reverse'>
-            <div className='box-hikvision gs_reveal gs_reveal_fromRight'>
+            <div className='box-1 gs_reveal gs_reveal_fromRight'>
               <h2 style={{ textAlign: 'left' }}>About Hikvision</h2>
               <p>
                 <b>Hikvision</b> is a world leading IoT solution provider with
@@ -126,7 +130,7 @@ export class PartnersContent extends Component {
               <a href='https://www.hikvision.com/' target='_blank'>
                 <img src={imgHikVision} alt='IoT solution' width='300' />
               </a>
-              <div className='spacer-3'></div>
+              {/* <div className='spacer-3'></div> */}
             </div>
           </div>
         </div>

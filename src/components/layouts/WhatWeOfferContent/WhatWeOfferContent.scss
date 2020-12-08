@@ -40,12 +40,16 @@
   }
 
   section.offer-content {
-    @include flex-type(space-between);
+    @media only screen and (min-device-width: 651px) and (max-device-width: 1920px) {
+      @include flex-type(space-between);
+    }
     margin-top: -99px;
 
     .box-1 {
       @include flex-type(row);
-      justify-content: flex-end;
+      @media only screen and (min-device-width: 769px) and (max-device-width: 1920px) {
+        justify-content: flex-end;
+      }
       width: 100%;
 
       .box-content {
@@ -60,7 +64,12 @@
         }
 
         .flex-content {
-          @include flex-type(space-between);
+          @media only screen and (min-device-width: 950px) and (max-device-width: 1920px) {
+            @include flex-type(space-between);
+          }
+          @media only screen and (min-device-width: 530px) and (max-device-width: 650px) {
+            @include flex-type(space-between);
+          }
 
           .box-info {
             @include flex-type(row);

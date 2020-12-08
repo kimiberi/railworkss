@@ -53,7 +53,6 @@ const BackgroundFlipCard_1 = styled.div({
   backgroundSize: '100%',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
-
   color: '#FFF',
   position: 'relative',
   width: '100%',
@@ -322,7 +321,8 @@ function ParallaxContent() {
 
       <section className='services-content background-opacity' id='/services'>
         <h2 className='gs_reveal'>Our Services</h2>
-        <div className='box-content gs_reveal gs_reveal_fromRight'>
+        <div className='spacer-1' />
+        <div className='box-content gs_reveal'>
           <div className='box-info'>
             <FlipCard_1 />
             <FlipCard_2 />

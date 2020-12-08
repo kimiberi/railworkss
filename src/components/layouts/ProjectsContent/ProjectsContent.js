@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import moment from 'moment'
 import './ProjectsContent.scss'
+import MediaQuery from 'react-responsive'
 
 // date_create: moment().format("DD-MM-YYYY hh:mm:ss")
 
@@ -14,19 +15,38 @@ export class ProjectsContent extends Component {
         <h3 className='center'>Completed Projects</h3>
         <div className='box-content gs_reveal gs_reveal_fromLeft'>
           <section>
-            <div
-              style={{
-                height: '200px',
-                width: '100%',
-                backgroundImage:
-                  'url(' +
-                  require('../../../img/projects/hyteraradio.jpg') +
-                  ')',
-                backgroundSize: 'cover',
-                backgroundPosition: 'bottom',
-                backgroundRepeat: 'no-repeat',
-              }}
-            />
+            {/* RESPONSIVE PURPOSE: IMAGE SIZE */}
+            <MediaQuery minDeviceWidth={769} maxDeviceWidth={1920}>
+              <div
+                style={{
+                  height: '200px',
+                  width: '100%',
+                  backgroundImage:
+                    'url(' +
+                    require('../../../img/projects/hyteraradio.jpg') +
+                    ')',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'bottom',
+                  backgroundRepeat: 'no-repeat',
+                }}
+              />
+            </MediaQuery>
+            <MediaQuery minDeviceWidth={320} maxDeviceWidth={768}>
+              <div
+                style={{
+                  height: '350px',
+                  width: '100%',
+                  backgroundImage:
+                    'url(' +
+                    require('../../../img/projects/hyteraradio.jpg') +
+                    ')',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'bottom',
+                  backgroundRepeat: 'no-repeat',
+                }}
+              />
+            </MediaQuery>
+
             <div className='section-content'>
               <span
                 style={{
@@ -53,17 +73,38 @@ export class ProjectsContent extends Component {
           </section>
 
           <section>
-            <div
-              style={{
-                height: '200px',
-                width: '100%',
-                backgroundImage:
-                  'url(' + require('../../../img/projects/phil_army.jpg') + ')',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-              }}
-            />
+            {/* RESPONSIVE PURPOSE: IMAGE SIZE */}
+            <MediaQuery minDeviceWidth={769} maxDeviceWidth={1920}>
+              <div
+                style={{
+                  height: '200px',
+                  width: '100%',
+                  backgroundImage:
+                    'url(' +
+                    require('../../../img/projects/phil_army.jpg') +
+                    ')',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                }}
+              />
+            </MediaQuery>
+            <MediaQuery minDeviceWidth={320} maxDeviceWidth={768}>
+              <div
+                style={{
+                  height: '350px',
+                  width: '100%',
+                  backgroundImage:
+                    'url(' +
+                    require('../../../img/projects/phil_army.jpg') +
+                    ')',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                }}
+              />
+            </MediaQuery>
+
             <div className='section-content'>
               <span
                 style={{
@@ -86,17 +127,34 @@ export class ProjectsContent extends Component {
           </section>
 
           <section>
-            <div
-              style={{
-                height: '200px',
-                width: '100%',
-                backgroundImage:
-                  'url(' + require('../../../img/projects/bfp.jpg') + ')',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-              }}
-            />
+            {/* RESPONSIVE PURPOSE: IMAGE SIZE */}
+            <MediaQuery minDeviceWidth={769} maxDeviceWidth={1920}>
+              <div
+                style={{
+                  height: '200px',
+                  width: '100%',
+                  backgroundImage:
+                    'url(' + require('../../../img/projects/bfp.jpg') + ')',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                }}
+              />
+            </MediaQuery>
+            <MediaQuery minDeviceWidth={320} maxDeviceWidth={768}>
+              <div
+                style={{
+                  height: '350px',
+                  width: '100%',
+                  backgroundImage:
+                    'url(' + require('../../../img/projects/bfp.jpg') + ')',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                }}
+              />
+            </MediaQuery>
+
             <div className='section-content'>
               <span
                 style={{
@@ -127,17 +185,38 @@ export class ProjectsContent extends Component {
           </section>
 
           <section>
-            <div
-              style={{
-                height: '200px',
-                width: '100%',
-                backgroundImage:
-                  'url(' + require('../../../img/projects/lrt_train.jpg') + ')',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-              }}
-            />
+            {/* RESPONSIVE PURPOSE: IMAGE SIZE */}
+            <MediaQuery minDeviceWidth={769} maxDeviceWidth={1920}>
+              <div
+                style={{
+                  height: '200px',
+                  width: '100%',
+                  backgroundImage:
+                    'url(' +
+                    require('../../../img/projects/lrt_train.jpg') +
+                    ')',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                }}
+              />
+            </MediaQuery>
+            <MediaQuery minDeviceWidth={320} maxDeviceWidth={768}>
+              <div
+                style={{
+                  height: '350px',
+                  width: '100%',
+                  backgroundImage:
+                    'url(' +
+                    require('../../../img/projects/lrt_train.jpg') +
+                    ')',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                }}
+              />
+            </MediaQuery>
+
             <div className='section-content'>
               <span
                 style={{
@@ -166,13 +245,18 @@ export class ProjectsContent extends Component {
         <h3 className='center'>Ongoing Projects</h3>
         <div className='box-content gs_reveal gs_reveal_fromRight'>
           <section>
+            <MediaQuery minDeviceWidth={320} maxDeviceWidth={768}>
+              <div style={{ paddingTop: '25px' }} />
+            </MediaQuery>
+
+            {/* THIS INLINE STYLE APPLICABLE ONLY FOR IMAGE */}
             <div
               style={{
                 height: '150px',
                 width: '180px',
                 display: 'block',
                 margin: 'auto',
-                marginTop: '25px',
+                paddingTop: '25px',
                 backgroundImage:
                   'url(' + require('../../../img/logo_customers/lrt.png') + ')',
                 backgroundSize: 'cover',
@@ -210,6 +294,11 @@ export class ProjectsContent extends Component {
           </section>
 
           <section>
+            <MediaQuery minDeviceWidth={320} maxDeviceWidth={768}>
+              <div style={{ paddingTop: '5px' }} />
+            </MediaQuery>
+
+            {/* THIS INLINE STYLE APPLICABLE ONLY FOR IMAGE */}
             <div
               style={{
                 height: '150px',
@@ -258,6 +347,11 @@ export class ProjectsContent extends Component {
           </section>
 
           <section>
+            <MediaQuery minDeviceWidth={320} maxDeviceWidth={768}>
+              <div style={{ paddingTop: '5px' }} />
+            </MediaQuery>
+
+            {/* THIS INLINE STYLE APPLICABLE ONLY FOR IMAGE */}
             <div
               style={{
                 height: '150px',
