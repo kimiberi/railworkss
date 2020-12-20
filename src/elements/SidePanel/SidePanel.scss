@@ -25,6 +25,34 @@
     font-size: 14px;
     margin: 0px 10px;
     padding: 10px 10px;
+    display: block; // ALLOWS YOU TO FIX LINE-HEIGHT
+  }
+
+  ul li a.active {
+    background: var(--gray-700);
+    color: var(--white);
+  }
+
+  ul li a.active:before {
+    background: #fff;
+    opacity: 0.3;
+  }
+
+  .location,
+  .email,
+  .phone {
+    @include flex-type(column);
+    text-align: center;
+
+    a {
+      color: var(--white);
+    }
+
+    img {
+      display: block;
+      margin: auto;
+      margin-bottom: 10px;
+    }
   }
 }
 // .nav {

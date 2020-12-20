@@ -14,7 +14,7 @@ export class HikvisionContent extends Component {
             style={{
               border: '1px solid #c3c3c3',
               boxShadow: '9px 9px 15px #b3b3b3',
-              width: '51%',
+              width: '90%',
               display: 'block',
               margin: 'auto',
             }}

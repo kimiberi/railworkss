@@ -42,24 +42,32 @@
       font-weight: 700; // based on PlayfairDisplaySC-Bold.ttf
       text-shadow: 9px 6px 5px var(--black);
       letter-spacing: 5px;
-      font-size: 51px;
       color: var(--white);
+
+      @media only screen and (min-device-width: 716px) and (max-device-width: 1920px) {
+        font-size: 51px;
+      }
+      @media only screen and (min-device-width: 381px) and (max-device-width: 715px) {
+        font-size: 42px;
+        margin-bottom: 60px;
+      }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 380px) {
+        font-size: 33px;
+        margin-bottom: 60px;
+      }
     }
     p.sub-slogan {
       font-family: var(--fontfam-JosefinSans);
       text-shadow: 9px 6px 5px var(--black);
       letter-spacing: 3px;
-      font-size: 21px;
       margin-top: -50px;
       color: var(--white);
-    }
 
-    @media only screen and (min-device-width: 320px) and (max-device-width: 800px) {
-      p.slogan {
-        font-size: 42px;
+      @media only screen and (min-device-width: 716px) and (max-device-width: 1920px) {
+        font-size: 21px;
       }
-      p.sub-slogan {
-        font-size: 18px;
+      @media only screen and (min-device-width: 320px) and (max-device-width: 715px) {
+        font-size: 17px;
       }
     }
   }

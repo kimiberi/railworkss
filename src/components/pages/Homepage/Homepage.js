@@ -21,11 +21,11 @@ const HeaderPart = () => {
     <div id='page-sticky'>
       {isTablet && (
         <div id='page-sticky'>
-          <SidePanel />
+          <SidePanel activePage={'partners'} />
         </div>
       )}
       <SmallHeader />
-      <StickyHeader />
+      <StickyHeader activePage={'partners'} />
     </div>
   )
 }

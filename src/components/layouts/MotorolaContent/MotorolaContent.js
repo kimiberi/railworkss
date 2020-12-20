@@ -18,7 +18,7 @@ export class MotorolaContent extends Component {
             style={{
               border: '1px solid #c3c3c3',
               boxShadow: '9px 9px 15px #b3b3b3',
-              width: '75%',
+              width: '100%',
               display: 'block',
               margin: 'auto',
             }}

@@ -11,6 +11,8 @@
     background: var(--white);
   }
   .box-content {
-    @include width(1200);
+    @media only screen and (min-device-width: 1300px) and (max-device-width: 1920px) {
+      @include width(1200);
+    }
   }
 }

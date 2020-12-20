@@ -18,7 +18,7 @@ export class HyteraContent extends Component {
             <img
               src={imgHyteraFlowchart}
               alt='Hytera Radio Communication'
-              width='85%'
+              width='95%'
               style={{ display: 'block', margin: 'auto' }}
             />
 

@@ -7,7 +7,7 @@ import logoRailworks from '../../img/icons/railworks_whtlogo.png'
 import iconPhone from '../../img/icons/favicon_whtphone.png'
 
 // RESPONSIVE PLATFORM TABLETVIEW
-export default function StickyHeader() {
+export default function StickyHeader(props) {
   const isDesktop = useMediaQuery({
     query: '(min-device-width: 1030px)',
   })
@@ -17,6 +17,8 @@ export default function StickyHeader() {
   const isMobile = useMediaQuery({
     query: '(max-device-width: 640px)',
   })
+
+  const activePage = props.activePage
 
   return (
     // <div id='page-sticky'>
@@ -87,7 +89,7 @@ export default function StickyHeader() {
                       <a
                         href='/partners#/partners'
                         className={
-                          window.location.pathname == '/partners'
+                          window.location.pathname == `/${activePage}`
                             ? 'active'
                             : ''
                         }

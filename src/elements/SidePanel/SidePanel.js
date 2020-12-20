@@ -1,8 +1,13 @@
 import React from 'react'
 import './SidePanel.scss'
 import { slide as Menu } from 'react-burger-menu'
+import iconLocation from '../../img/icons/favicon_whtlocation.png'
+import iconEmail from '../../img/icons/favicon_whtemail.png'
+import iconPhone from '../../img/icons/favicon_whtphone.png'
 
 export default function SidePanel(props) {
+  const activePage = props.activePage
+
   return (
     <Menu {...props}>
       <div className='nav-root nav'>
@@ -33,7 +38,7 @@ export default function SidePanel(props) {
             <a
               href='/partners#/partners'
               className={
-                window.location.pathname == '/partners' ? 'active' : ''
+                window.location.pathname == `/${activePage}` ? 'active' : ''
               }
             >
               Partners
@@ -68,6 +73,37 @@ export default function SidePanel(props) {
             </a>
           </li>
         </ul>
+
+        <div className='spacer-2' />
+        <section className='location'>
+          <img src={iconLocation} width='18' height='18' />
+          <p>
+            <a
+              href='https://www.google.com/maps/place/Railworks+Corporation/@14.5202409,121.0343059,17z/data=!3m1!4b1!4m5!3m4!1s0x3397c923a36a5983:0xf6401fbedfe87a9e!8m2!3d14.5202357!4d121.0364946'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              101 E. Aguinaldo Ave. AFPOVAI Phase I Western Bicutan, Taguig City
+              1630 Philippines
+            </a>
+          </p>
+        </section>
+
+        <div className='spacer-1' />
+
+        <section className='email'>
+          <img src={iconEmail} style={{ width: '18px', height: '18px' }} />
+          <a href='mailto:info@railworksph.com'>info@railworksph.com</a>
+        </section>
+
+        <div className='spacer-1' />
+
+        <section className='phone'>
+          <img src={iconPhone} style={{ width: '18px', height: '18px' }} />
+          <p>
+            <a href='tel:(02) 8280-2381'>(02) 8280-2381</a>
+          </p>
+        </section>
       </div>
     </Menu>
   )
