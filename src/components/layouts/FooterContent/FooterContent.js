@@ -17,6 +17,7 @@ export class FooterContent extends Component {
 
   render() {
     const activePage = this.props.activePage
+    const activeContactPage = this.props.activeContactPage
 
     return (
       <div className='footer-style background-opacity'>
@@ -87,7 +88,9 @@ export class FooterContent extends Component {
                 <a
                   href='/contact'
                   className={
-                    window.location.pathname == '/contact' ? 'active' : ''
+                    window.location.pathname == `/${activeContactPage}`
+                      ? 'active'
+                      : ''
                   }
                 >
                   Contact Us

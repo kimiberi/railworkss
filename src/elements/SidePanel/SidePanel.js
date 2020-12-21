@@ -7,6 +7,7 @@ import iconPhone from '../../img/icons/favicon_whtphone.png'
 
 export default function SidePanel(props) {
   const activePage = props.activePage
+  const activeContactPage = props.activeContactPage
 
   return (
     <Menu {...props}>
@@ -67,7 +68,11 @@ export default function SidePanel(props) {
           <li>
             <a
               href='/contact'
-              className={window.location.pathname == '/contact' ? 'active' : ''}
+              className={
+                window.location.pathname == `/${activeContactPage}`
+                  ? 'active'
+                  : ''
+              }
             >
               Contact Us
             </a>

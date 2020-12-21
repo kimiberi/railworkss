@@ -19,6 +19,7 @@ export default function StickyHeader(props) {
   })
 
   const activePage = props.activePage
+  const activeContactPage = props.activeContactPage
 
   return (
     // <div id='page-sticky'>
@@ -125,7 +126,9 @@ export default function StickyHeader(props) {
                       <a
                         href='/contact'
                         className={
-                          window.location.pathname == '/contact' ? 'active' : ''
+                          window.location.pathname == `/${activeContactPage}`
+                            ? 'active'
+                            : ''
                         }
                       >
                         Contact Us

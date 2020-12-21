@@ -9,6 +9,7 @@ import { Hytera } from './components/pages/Hytera/Hytera'
 import { Motorola } from './components/pages/Motorola/Motorola'
 import { Radwin } from './components/pages/Radwin/Radwin'
 import { Hikvision } from './components/pages/Hikvision/Hikvision'
+import { Contact } from './components/pages/Contact/Contact'
 
 const routing = (
   <Router>
@@ -17,11 +18,11 @@ const routing = (
     <Route path='/partners' component={Homepage} />
     <Route path='/services' component={Homepage} />
     <Route path='/projects' component={Homepage} />
-    <Route path='/contact' component={Homepage} />
     <Route path='/hytera' component={Hytera} />
     <Route path='/motorola' component={Motorola} />
     <Route path='/radwin' component={Radwin} />
     <Route path='/hikvision' component={Hikvision} />
+    <Route path='/contact' component={Contact} />
   </Router>
 )
 

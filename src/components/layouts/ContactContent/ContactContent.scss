@@ -1,0 +1,16 @@
+@import '../../../style/defaultStyle';
+
+.contactcontent-style {
+  position: relative;
+  z-index: 7;
+  margin-top: -1px;
+  padding: var(--padding-big);
+  background: var(--white);
+
+  .box-content {
+    @media only screen and (min-device-width: 1300px) and (max-device-width: 1920px) {
+      @include width(1200);
+      outline: 1px solid green;
+    }
+  }
+}
