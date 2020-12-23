@@ -1,0 +1,30 @@
+@import '../../../style/defaultStyle';
+
+.videocontent-style {
+  position: relative;
+  z-index: 7;
+  margin-top: -1px;
+  padding: var(--padding-big);
+  background: var(--white);
+
+  .box-content {
+    @media only screen and (min-device-width: 1300px) and (max-device-width: 1920px) {
+      @include width(1200);
+    }
+    @media only screen and (min-device-width: 769px) and (max-device-width: 1920px) {
+      .player {
+        height: 550px;
+      }
+    }
+    @media only screen and (min-device-width: 501px) and (max-device-width: 768px) {
+      .player {
+        height: 350px;
+      }
+    }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+      .player {
+        height: 250px;
+      }
+    }
+  }
+}

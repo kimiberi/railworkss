@@ -10,6 +10,7 @@ import { Motorola } from './components/pages/Motorola/Motorola'
 import { Radwin } from './components/pages/Radwin/Radwin'
 import { Hikvision } from './components/pages/Hikvision/Hikvision'
 import { Contact } from './components/pages/Contact/Contact'
+import { Video } from './components/pages/Video/Video'
 
 const routing = (
   <Router>
@@ -23,6 +24,7 @@ const routing = (
     <Route path='/radwin' component={Radwin} />
     <Route path='/hikvision' component={Hikvision} />
     <Route path='/contact' component={Contact} />
+    <Route path='/video' component={Video} />
   </Router>
 )
 
